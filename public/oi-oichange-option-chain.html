@@ -1,0 +1,572 @@
+<html>
+
+<head>
+    <title>Option Chain Analysis</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+        crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <script src="functions.js"></script>
+    <style>
+        div#content {
+            display: none;
+        }
+
+        .last_update {
+            margin-left: auto;
+        }
+    </style>
+
+</head>
+
+
+<body onload=init()>
+    <div class="container-fluid position-fixed bg-light">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg border-bottom ">
+                    <a class="navbar-brand" href="/">
+                        <h1>FPC</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="position-sticky collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="nav nav-pills  mb-auto px-2">
+                            <li class="nav-item ">
+                                <a href="/multi" class="nav-link text-dark" aria-current="page">
+
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/entry" class="nav-link text-dark">
+
+                                    Entry
+                                </a>
+                            </li>
+                            <!-- <li>
+                            <a href="/oca" class="nav-link text-dark">
+                                
+                                Option Chain Analysis
+                            </a>
+                        </li> -->
+                            <!-- <li>
+                            <a href="/api" class="nav-link text-dark">
+                                
+                                Live API
+                            </a>
+                        </li>
+                        <li> -->
+                            <a href="/temp" class="nav-link text-dark">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#grid"></use>
+                                </svg>
+                                Temp
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <ul class="nav nav-tabs pt-2" id="nav-tabs-top">
+
+                </ul>
+
+
+                <form class="inline-form bg-secondary p-2 m-0   ">
+                    <fieldset>
+                        <div class="form-group-inline d-flex">
+                            <select name="expiryDate" id="dropdown-date" onchange="get_select()"></select>
+                            <div id="checkbox_container"></div>
+                            <div class="dropdown" id="dropdown-main">
+                                <div class="dropdown-toggle" id="dropdownMenuButton"> Select StrikePrice </div>
+                                <div id="dropdown" class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid padding-t-200">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="content"></div>
+
+                <script id="table-template" type="text/x-handlebars-template">
+                <table class="table  table-striped text-center table-bordered">
+                    <thead class="sticky-top table-secondary">
+                        <tr>
+                            <th colspan="5">Call</th>
+                            
+                            <th id="underlying_value"></th>
+                            <th colspan="5">Put</th>
+                        </tr>
+                        <tr>
+                            <th style="width: 12%;">Change in OI</th>
+                            <th style="width: 12%;">Open Intrest</th>
+                            
+                            <th style="width: 12%;" id="volume">Volume</th>
+                            <th style="width: 5%;">Change</th>
+                            <th style="width: 5%;">Premium</th>         
+                            
+                            <th style="width: 7%;">Strike Price</th>
+                            
+                            <th style="width: 5%;" >Premium</th>
+                            <th style="width: 5%;">Change</th>
+                            <th style="width: 12%;" >Volume</th>
+                          
+                            <th style="width: 12%;" >Open Intrest</th>   
+                            <th style="width: 12%;" >Change in OI</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each data}}
+                        <tr class="{{ spot_price }}">                                  
+                           
+                            <td class="CE{{CE.class}} ce_changeinOI ">
+                                <div style="{{CE.CE_change_oi_width}}" class="background_coi"></div>
+                                <div class="td_text" > {{CE.changeinOpenInterest}} </div>
+                            </td>
+                                                                              
+                            <td class="ce_OI  CE{{CE.class}} {{CE.maxoi}}">
+                                <div style ="width:{{CE.CE_width_oi}}%" class="background "></div>
+
+                                {{#if CE.oi_percent}}
+                                <div class="td_text" ><div class="percentage">{{CE.oi_percent}}%</div> {{CE.openInterest}}</div>
+                                {{else}}
+                                <div class="td_text" >{{CE.openInterest}} 
+                                    {{#if CE.oi_direction}}<i class="bi bi-arrow-{{CE.oi_direction}}-square"></i>{{else}}{{/if}}
+                                </div>                                                         
+                                {{/if}}
+                            </td>
+
+                            <td  class="ce_volume  CE{{CE.class}} {{CE.maxvolume}}">
+                                <div class="background_vol " style="width: {{CE.CE_width_volume}}%;"></div>   
+                                {{#if CE.valu_percent}}
+                                <div class="td_text" ><div class="percentage">{{CE.valu_percent}}%</div> {{CE.totalTradedVolume}}</div>
+                                {{else}}
+                                <div class="td_text" >{{CE.totalTradedVolume}} {{#if CE.volume_direction}}<i class="bi bi-arrow-{{CE.volume_direction}}-square"></i>{{else}}{{/if}}</div>
+                                {{/if}}  
+                            </td>
+                          
+                            <td class="ce_change {{CE.style_class}} CE{{CE.class}}">{{CE.change}}</td>
+                            <td class="ce_premium CE{{CE.class}}">{{CE.premium}}</td>                            
+                            
+                            <td class="strikeprice"> {{strikePrice}}</td>
+                            
+                            <td class="pe_premium red-300 PE{{PE.class}}">{{PE.premium}}</td>
+                            <td class="pe_change {{PE.style_class}} CE{{PE.class}}">{{PE.change}}</td>
+
+                            <td  class="pe_volume  PE{{PE.class}} {{PE.maxvolume}}">
+                                <div class="background_vol" style="width: {{PE.PE_width_volume}}%;"></div> 
+                                {{#if PE.valu_percent}}
+                                <div class="td_text" ><div class="percentage">{{PE.valu_percent}}%</div> {{PE.totalTradedVolume}}</div>
+                                {{else}}
+                                <div class="td_text" >{{PE.totalTradedVolume}}{{#if PE.volume_direction}}<i class=" bi bi-arrow-{{PE.volume_direction}}-square"></i>{{else}}{{/if}}</div>
+                                {{/if}}   
+                            </td>
+
+                            <td class="pe_OI  PE{{PE.class}} {{PE.maxoi}}">
+                                <div style ="width:{{PE.PE_width_oi}}%" class="background "></div>
+                                {{#if PE.oi_percent}}
+                                <div class="td_text" ><div class="percentage">{{PE.oi_percent}}%</div> {{PE.openInterest}}</div>
+                                {{else}}
+                                <div class="td_text" >{{PE.openInterest}}{{#if PE.oi_direction}}<i class="bi bi-arrow-{{PE.oi_direction}}-square"></i>{{else}}{{/if}}</div>
+                                {{/if}}
+                            </td>
+
+                            <td class="pe_changeinOI PE{{PE.class}}"> 
+                                <div style="{{PE.PE_change_oi_width}}" class="background_coi"></div>
+                                <div class="td_text">{{PE.changeinOpenInterest}}</div>
+                            </td>
+                            
+                        </tr>   
+                        {{/each}}
+                        <tr style="background-color: aquamarine;">
+                                <td id="ce_change_oi_tot"></td>
+                                <td id="ce_oi_tot"></td>
+                                <td id="ce_vol_tot"></td>
+
+                                <td colspan="5">Total</td>
+                              
+                                <td id="pe_vol_tot"></td>
+                                <td id="pe_oi_tot"></td>
+                                <td id="pe_change_oi_tot"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </script>
+                <h2>Open Intrest Option Chain</h2>
+                <div id="status"></div>
+                <div class="last_update">Last Updated: <span id="last_update"></span> </div>
+                <div id="table-container" class="table-bordered table-striped table_container"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+
+        const index_optionchain_select = document.getElementById('index_optionchain_select');
+        var exp_date = document.getElementById('dropdown-date');
+
+        window.addEventListener("load", (event) => {
+            const statusDisplay = document.getElementById("status");
+            statusDisplay.textContent = navigator.onLine ? "Online" : "OFFline";
+        });
+        var spot_price;
+        function init() {
+
+            // fetch('/daaa.json').then(resp => {
+            fetch('/multiapi').then(resp => {
+                // console.log(resp);
+                if (resp.status != 200) throw new Error('something went wrong');
+                return resp.json();
+            }).then(data => {
+                var filteredData = data;
+                spot_price = filteredData[0].CE.underlyingValue;
+
+                window.onload = onload_table();
+                // on load create table
+                function onload_table() {
+
+
+
+                    document.getElementById("dropdownMenuButton").addEventListener("click", function () {
+                        var dropdownMenu = this.nextElementSibling;
+                        dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
+                        var dropdown = document.getElementById("dropdown-main");
+                        document.addEventListener("click", function (event) {
+                            var targetElement = event.target;
+                            if (dropdown.contains(targetElement) === false) {
+                                dropdownMenu.style.display = "none";
+                            }
+                        });
+                    });
+
+
+                    setTimeout(() => {
+                        get_select(filteredData);
+                    }, 100);
+                    index_check_available(filteredData);
+                    show_data(filteredData);
+
+                }
+
+            }).catch(err => {
+                document.getElementById('content').innerHTML = "Error Occured: " + err.toString();
+                // reject('error');
+            })
+        }
+
+        var CE_data_css = [];
+        var PE_data_css = [];
+        var PE_changeoi_data_css = [];
+        var CE_changeoi_data_css = [];
+
+        var CE_vol_data_css = []
+        var PE_vol_data_css = []
+
+
+        function calculate_total(dataa) {
+
+            var total_oi = [];
+            var total_vol = [];
+            var total_oi_change = [];
+
+            for (var i = 0; i < dataa.length; i++) {
+                total_oi.push([parseInt(dataa[i].CE.openInterest.toString().replace(/\,/g, '')), parseInt(dataa[i].PE.openInterest.toString().replace(/\,/g, ''))]);
+                total_oi_change.push([parseInt(dataa[i].CE.changeinOpenInterest.toString().replace(/\,/g, '')), parseInt(dataa[i].PE.changeinOpenInterest.toString().replace(/\,/g, ''))]);
+                total_vol.push([parseInt(dataa[i].CE.totalTradedVolume.toString().replace(/\,/g, '')), parseInt(dataa[i].PE.totalTradedVolume.toString().replace(/\,/g, ''))]);
+            }
+
+
+            var total_pe_oi = 0;
+            var total_ce_oi = 0;
+
+            var total_pe_oi_change = 0;
+            var total_ce_oi_change = 0;
+
+            var total_pe_vol = 0;
+            var total_ce_vol = 0;
+
+            for (var i = 0; i < total_oi.length; i++) {
+
+                total_ce_oi += total_oi[i][0];
+                total_pe_oi += total_oi[i][1];
+
+                total_ce_oi_change += total_oi_change[i][0];
+                total_pe_oi_change += total_oi_change[i][1];
+
+                total_ce_vol += total_vol[i][0];
+                total_pe_vol += total_vol[i][1];
+            }
+            setTimeout(() => {
+
+                document.getElementById('ce_oi_tot').innerHTML = parseInt(total_ce_oi).toLocaleString('en-IN');
+                document.getElementById('pe_oi_tot').innerHTML = parseInt(total_pe_oi).toLocaleString('en-IN');
+
+                document.getElementById('ce_change_oi_tot').innerHTML = parseInt(total_ce_oi_change).toLocaleString('en-IN');
+                document.getElementById('pe_change_oi_tot').innerHTML = parseInt(total_pe_oi_change).toLocaleString('en-IN');
+
+                document.getElementById('ce_vol_tot').innerHTML = parseInt(total_ce_vol).toLocaleString('en-IN');
+                document.getElementById('pe_vol_tot').innerHTML = parseInt(total_pe_vol).toLocaleString('en-IN');
+
+            }, 10);
+        }
+
+
+        function renderdata(data) {
+            read_checkbox()
+            add_price_line(data);
+            const datas = data;
+            var dataa = data;
+            calculate_total(dataa)
+
+            CE_data_css.length = 0;
+            PE_data_css.length = 0;
+            CE_changeoi_data_css.length = 0;
+            PE_changeoi_data_css.length = 0;
+            PE_vol_data_css.length = 0;
+            CE_vol_data_css.length = 0;
+
+            for (var i = 0; i < dataa.length; i++) {
+
+                // for the openintrest 
+                var CE_vol = dataa[i].CE.totalTradedVolume;
+                CE_vol = CE_vol.toString();
+                CE_vol = CE_vol.replace(/\,/g, ''); // 1125, but a string, so convert it to number
+                CE_vol = parseInt(CE_vol, 10);
+                CE_vol_data_css.push(CE_vol);
+
+                var PE_vol = dataa[i].PE.totalTradedVolume;
+                PE_vol = PE_vol.toString();
+                PE_vol = PE_vol.replace(/\,/g, ''); // 1125, but a string, so convert it to number
+                PE_vol = parseInt(PE_vol, 10);
+                PE_vol_data_css.push(PE_vol);
+
+                // for the openintrest 
+                var CE_OI_ = dataa[i].CE.openInterest;
+                CE_OI_ = CE_OI_.toString();
+                CE_OI_ = CE_OI_.replace(/\,/g, ''); // 1125, but a string, so convert it to number
+                CE_OI_ = parseInt(CE_OI_, 10);
+                CE_data_css.push(CE_OI_);
+
+                var PE_OI_ = dataa[i].PE.openInterest;
+                PE_OI_ = PE_OI_.toString();
+                PE_OI_ = PE_OI_.replace(/\,/g, ''); // 1125, but a string, so convert it to number
+                PE_OI_ = parseInt(PE_OI_, 10);
+                PE_data_css.push(PE_OI_);
+
+
+                // for the changeinOpenInterest 
+                var CE_Change_oi_ = dataa[i].CE.changeinOpenInterest;
+                CE_Change_oi_ = CE_Change_oi_.toString();
+
+                if (CE_Change_oi_.includes(",")) {
+                    CE_Change_oi_ = CE_Change_oi_.replaceAll(',', '');
+                }
+                CE_Change_oi_ = parseInt(CE_Change_oi_, 10);
+                CE_changeoi_data_css.push(CE_Change_oi_);
+
+                var PE_Change_oi_ = dataa[i].PE.changeinOpenInterest;
+                PE_Change_oi_ = PE_Change_oi_.toString();
+
+                if (PE_Change_oi_.includes(",")) {
+                    PE_Change_oi_ = PE_Change_oi_.replaceAll(',', '');
+                }
+                PE_Change_oi_ = parseInt(PE_Change_oi_, 10);
+                PE_changeoi_data_css.push(PE_Change_oi_);
+
+            };
+
+            // to get the max number in colume 
+            var CE_maxx = Math.max(...CE_data_css);
+            var PE_maxx = Math.max(...PE_data_css);
+            var CE_change_oi__max = Math.max(...CE_changeoi_data_css);
+            var PE_change_oi__max = Math.max(...PE_changeoi_data_css);
+            var CE_vol_max = Math.max(...CE_vol_data_css);
+            var PE_vol_max = Math.max(...PE_vol_data_css);
+
+            for (var i = 0; i < dataa.length; i++) {
+
+                //calculate the percentage of the width totalTradedVolume
+                var CE_vol_ = dataa[i].CE.totalTradedVolume;
+                CE_vol_ = CE_vol_.toString();
+                CE_vol_ = CE_vol_.replace(/\,/g, ''); // a string, so convert it to number
+                CE_vol_ = parseInt(CE_vol_, 10);
+                var CE_width_vol = ((CE_vol_ / CE_vol_max) * 100).toFixed(30);
+
+                var PE_vol_ = dataa[i].PE.totalTradedVolume;
+                PE_vol_ = PE_vol_.toString();
+                PE_vol_ = PE_vol_.replace(/\,/g, ''); // a string, so convert it to number
+                PE_vol_ = parseInt(PE_vol_, 10);
+                var PE_width_vol = ((PE_vol_ / PE_vol_max) * 100).toFixed(30);
+
+                data[i].CE.CE_width_volume = CE_width_vol;
+                data[i].PE.PE_width_volume = PE_width_vol;
+
+
+                //calculate the percentage of the width openInterest
+                var CE_b = dataa[i].CE.openInterest;
+                CE_b = CE_b.toString();
+                CE_b = CE_b.replace(/\,/g, ''); // a string, so convert it to number
+                CE_b = parseInt(CE_b, 10);
+                var CE_width = ((CE_b / CE_maxx) * 100).toFixed(30);
+
+                var PE_b = dataa[i].PE.openInterest;
+                PE_b = PE_b.toString();
+                PE_b = PE_b.replace(/\,/g, ''); // a string, so convert it to number
+                PE_b = parseInt(PE_b, 10);
+                var PE_width = ((PE_b / PE_maxx) * 100).toFixed(30);
+
+                data[i].CE.CE_width_oi = CE_width;
+                data[i].PE.PE_width_oi = PE_width;
+
+                //calculate the percentage of the width changeinOpenInterest
+                var CE_c = dataa[i].CE.changeinOpenInterest;
+                CE_c = CE_c.toString();
+                CE_c = CE_c.replace(/\,/g, ''); // a string, so convert it to number
+                CE_c = parseInt(CE_c, 10);
+                var CE_change_oi___ = ((CE_c / CE_change_oi__max) * 100).toFixed(30);
+                if (Math.sign(CE_change_oi___) == '-1') {
+                    CE_change_oi___ = Math.abs(CE_change_oi___);
+                }
+                CE_change_oi___ = CE_change_oi___ / 2;
+
+                if (Math.sign(CE_c) == '-1') {
+                    data[i].CE.CE_change_oi_width = 'width: ' + CE_change_oi___ + '%;background: #ff1a1a;right: 50%;'
+                }
+                else {
+                    data[i].CE.CE_change_oi_width = 'width: ' + CE_change_oi___ + '%;background: #39e600;left: 50%;'
+                }
+                var PE_c = dataa[i].PE.changeinOpenInterest;
+                PE_c = PE_c.toString();
+                PE_c = PE_c.replace(/\,/g, ''); // a string, so convert it to number
+                PE_c = parseInt(PE_c, 10);
+                var PE_change_oi___ = ((PE_c / PE_change_oi__max) * 100).toFixed(30);
+
+                if (Math.sign(PE_change_oi___) == '-1') {
+                    PE_change_oi___ = Math.abs(PE_change_oi___);
+                }
+                PE_change_oi___ = PE_change_oi___ / 2;
+                if (Math.sign(PE_c) == '-1') {
+                    data[i].PE.PE_change_oi_width = 'width: ' + PE_change_oi___ + '%;background: #ff1a1a;right: 50%'
+                }
+                else {
+                    data[i].PE.PE_change_oi_width = 'width: ' + PE_change_oi___ + '%;background: #39e600;left: 50%;'
+                }
+
+
+
+
+
+
+
+                // ---------------------------------------------------------------------------------------------------------------------//
+                // For to update the style classes based on the negative and positive 
+                // ---------------------------------------------------------------------------------------------------------------------//
+                var CE_css_class = '';
+                var CE__change = dataa[i].CE.change;
+
+                if (Math.sign(CE__change) == '-1') {
+
+                    CE_css_class = 'negative';
+                }
+                else if (Math.sign(CE__change) == '1') {
+                    CE_css_class = 'positive';
+                }
+                else {
+                    CE_css_class = 'neutral';
+                }
+
+                var PE_css_class = '';
+                var PE__change = dataa[i].PE.change;
+
+                if (Math.sign(PE__change) == '-1') {
+
+                    PE_css_class = 'negative';
+                }
+                else if (Math.sign(PE__change) == '1') {
+                    PE_css_class = 'positive';
+                }
+                else {
+                    PE_css_class = 'neutral';
+                }
+                data[i].CE.style_class = CE_css_class;
+                data[i].PE.style_class = PE_css_class;
+            }
+
+            // console.log(data);
+
+            // Get the table template
+            var templateSource = document.getElementById('table-template').innerHTML;
+            // Compile the template
+            var template = Handlebars.compile(templateSource);
+            // Render the template with data
+            var html = template({ data: datas });
+            // Insert the rendered HTML into a container element
+            document.getElementById('table-container').innerHTML = html;
+        }
+
+
+
+
+        function fetchData() {
+            // Make a request to the API to fetch the data
+            fetch('/multiapi')
+                // fetch('/daaa.json')
+                .then(response => response.json())
+                .then(data => {
+                    pass_data(data);
+                    get_all_filter(data);
+
+                })
+
+                .catch(error => {
+                    // Handle any errors that occur during data fetching or processing
+                    console.error('Error fetching data:', error);
+                    // Retry the fetchData function after a certain interval 
+                    setTimeout(fetchData, 5000);
+                });
+
+
+        }
+
+        // Call the fetchData function to initiate the data fetching
+        setTimeout(() => {
+            fetchData();
+        }, 100);
+
+        // Call the fetchData function in 3 sec interval
+        setInterval(fetchData, 60000);
+
+
+
+    </script>
+
+
+</body>
+
+</html>

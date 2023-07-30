@@ -1,0 +1,92 @@
+.row {
+    --bs-gutter-x: unset !important;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+/* table, th, td { 
+    border: 1px solid black !important;
+  }  */
+
+thead.sticky-top.table-secondary tr th {
+    border: 3px solid #f0f0f0 !important;
+}
+
+.z-index-999 {
+    z-index: 999;
+}
+
+.table_container tbody {
+    z-index: -2 !important;
+    position: relative;
+}
+
+.padding-t-200 {
+    padding-top: 195px;
+}
+
+thead.sticky-top.table-secondary {
+    z-index: -1;
+    top: 195px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-main input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.dropdown-menu {
+
+    z-index: 9999;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+#dropdown {
+    z-index: 1;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.button_checkbox {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: grey;
+}
+
+
+/* td.positive,td.negative{color:#fff !important;font-weight:700} */
+td.negative {
+    color: red !important;
+}
+
+td.positive {
+    color: green !important;
+}
+
+td.ce_OI,
+td.pe_OI {
+    font-weight: 700;
+}

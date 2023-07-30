@@ -1,0 +1,297 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <script src="functions.js"></script>
+    <!-- <script src="functions-backup.js"></script> -->
+    <style>
+        div#content {
+            display: none;
+        }
+
+        .last_update {
+            margin-left: auto;
+        }
+    </style>
+
+</head>
+
+
+<body onload=init()>
+    <div class="container-fluid position-fixed bg-light">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg border-bottom ">
+                    <a class="navbar-brand" href="/">
+                        <h1>FPC</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="position-sticky collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="nav nav-pills  mb-auto px-2">
+                            <li class="nav-item ">
+                                <a href="/multi" class="nav-link text-dark" aria-current="page">
+
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/entry" class="nav-link text-dark">
+
+                                    Entry
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/oichange" class="nav-link text-dark">
+
+                                    OI change
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/volume_chain" class="nav-link text-dark">
+                                    Volume
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/temp" class="nav-link text-dark">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#grid"></use>
+                                    </svg>
+                                    Temp
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <ul class="nav nav-tabs pt-2" id="nav-tabs-top">
+
+                </ul>
+
+
+                <form class="inline-form bg-secondary p-2 m-0   ">
+                    <fieldset>
+                        <div class="form-group-inline d-flex">
+                            <select name="expiryDate" id="dropdown-date" onchange="get_select()"></select>
+                            <div id="checkbox_container"></div>
+                            <div class="dropdown" id="dropdown-main">
+                                <div class="dropdown-toggle" id="dropdownMenuButton"> Select StrikePrice </div>
+                                <div id="dropdown" class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid padding-t-200">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="content"></div>
+
+                <script id="table-template" type="text/x-handlebars-template">
+                <table class="table table-bordered table-striped text-center">
+                    <thead class="sticky-top table-secondary">
+                        <tr>
+                            <th colspan="10">Call</th>
+                            
+                            <th id="underlying_value"></th>
+                            <th colspan="10">Put</th>
+                        </tr>
+                        <tr>
+                            
+                            <th>Vega</th>
+                            <th>Theta</th>
+                            <th>Gamma</th>
+                            <th>Delta</th>
+                            <th>IV</th>
+                            <th>Change in OI</th>
+                            <th>TotalOI</th>
+                            <th>Volume</th>
+                            <th>Change</th>
+                            <th>Premium</th>         
+                            
+                            <th>Strike Price</th>
+                            
+                            <th>Premium</th>
+                            <th>Change</th>
+                            <th>Volume</th>
+                            <th>TotalOI</th>
+                            <th>Change in OI</th>
+                            <th>IV</th>
+                            <th>Delta</th>
+                            <th>Gamma</th>
+                            <th>Theta</th>
+                            <th>Vega</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each data}}
+                       
+                        <tr class="{{ spot_price }}">                                  
+                            <td class="CE{{CE.class}}">{{CE.vega}}</td>
+                            <td class="CE{{CE.class}}">{{CE.theta}}</td>
+                            <td class="CE{{CE.class}}">{{CE.gamma}}</td>
+                            <td class="CE{{CE.class}}">{{CE.delta}}</td>
+                            <td class="CE{{CE.class}}">{{CE.impliedVolatility}}</td>
+                            <td class="CE{{CE.class}}">{{CE.changeinOpenInterest}}</td>
+                            <td class="CE{{CE.class}}">{{CE.openInterest}}</td>
+                            <td class="CE{{CE.class}}">{{CE.totalTradedVolume}}</td>
+                            <td class="CE{{CE.class}}">{{CE.change}}</td>
+                            <td class="CE{{CE.class}}">{{CE.premium}}</td>                            
+                            
+                            <td class="strikeprice"> {{strikePrice}}</td>
+                            
+                            <td class="PE{{PE.class}}">{{PE.premium}}</td>
+                            <td class="PE{{PE.class}}">{{PE.change}}</td>
+                            <td class="PE{{PE.class}}">{{PE.totalTradedVolume}}</td>
+                            <td class="PE{{PE.class}}">{{PE.openInterest}}</td>
+                            <td class="PE{{PE.class}}">{{PE.changeinOpenInterest}}</td>
+                            <td class="PE{{PE.class}}">{{PE.impliedVolatility}}</td>
+                            <td class="PE{{PE.class}}">{{PE.delta}}</td>
+                            <td class="PE{{PE.class}}">{{PE.gamma}}</td>
+                            <td class="PE{{PE.class}}">{{PE.theta}}</td>
+                            <td class="PE{{PE.class}}">{{PE.vega}}</td>
+                            
+                        </tr>
+
+                        {{/each}}
+                    </tbody>
+                </table>
+            </script>
+                <h2>Full Option Chain</h2>
+                <div id="status"></div>
+                <div class="last_update">Last Updated: <span id="last_update"></span> </div>
+                <div id="table-container" class="table-bordered table-striped table_container"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        const index_optionchain_select = document.getElementById('index_optionchain_select');
+        var exp_date = document.getElementById('dropdown-date');
+
+        window.addEventListener("load", (event) => {
+            const statusDisplay = document.getElementById("status");
+            statusDisplay.textContent = navigator.onLine ? "Online" : "OFFline";
+        });
+        var spot_price;
+        function init() {
+
+            // fetch('/daaa.json').then(resp => {
+            fetch('/multiapi').then(resp => {
+                // console.log(resp);
+                if (resp.status != 200) throw new Error('something went wrong');
+                return resp.json();
+            }).then(data => {
+                var filteredData = data;
+
+                spot_price = filteredData[0].CE.underlyingValue;
+                window.onload = onload_table();
+                // on load create table
+                function onload_table() {
+                    document.getElementById("dropdownMenuButton").addEventListener("click", function () {
+                        var dropdownMenu = this.nextElementSibling;
+                        dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
+                        var dropdown = document.getElementById("dropdown-main");
+                        document.addEventListener("click", function (event) {
+                            var targetElement = event.target;
+                            if (dropdown.contains(targetElement) === false) {
+                                dropdownMenu.style.display = "none";
+                            }
+                        });
+                    });
+                    setTimeout(() => {
+                        get_select(filteredData);
+
+                    }, 100);
+                    index_check_available(filteredData);
+                    show_data(filteredData);
+                }
+
+            }).catch(err => {
+                document.getElementById('content').innerHTML = "Error Occured: " + err.toString();
+                // reject('error');
+            })
+        }
+
+
+
+
+
+
+        function renderdata(data) {
+
+            add_price_line(data);
+
+            // Get the table template
+            var templateSource = document.getElementById('table-template').innerHTML;
+            // Compile the template
+            var template = Handlebars.compile(templateSource);
+            // Render the template with data
+            var html = template({ data: data });
+            // Insert the rendered HTML into a container element
+            document.getElementById('table-container').innerHTML = html;
+
+            get_total_oi(data);
+
+        }
+
+
+
+        function fetchData() {
+            // Make a request to the API to fetch the data
+            fetch('/multiapi')
+                // fetch('/daaa.json')
+                .then(response => response.json())
+                .then(data => {
+                    pass_data(data);
+                    get_all_filter(data);
+                })
+                .catch(error => {
+                    // Handle any errors that occur during data fetching or processing
+                    console.error('Error fetching data:', error);
+                    // Retry the fetchData function after a certain interval 
+                    setTimeout(fetchData, 5000);
+                });
+
+        }
+
+        // Call the fetchData function to initiate the data fetching
+        setTimeout(() => {
+            fetchData();
+        }, 10);
+
+        // Call the fetchData function in 3 sec interval
+        setInterval(fetchData, 30000);
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,3950 @@
+[
+    {
+        "strikePrice": 36500,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "31,211",
+            "changeinOpenInterest": -12417,
+            "totalTradedVolume": "4,29,757",
+            "impliedVolatility": 119.62,
+            "lastPrice": 0.7,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.11,
+            "delta": -0.0002,
+            "gamma": 0,
+            "vega": 0.0144,
+            "theta": -1.1271,
+            "rho": -0.0002,
+            "iv": 0,
+            "timeValue": 0.7
+        },
+        "CE": {
+            "strikePrice": 36500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "2",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 7657.25,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 7782.95,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -9.9979,
+            "rho": 0.7649,
+            "iv": 7775.3,
+            "timeValue": -118.05
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 37000,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 37000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "2",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 6887.6,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 7283.05,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -10.1349,
+            "rho": 0.7754,
+            "iv": 7275.3,
+            "timeValue": -387.7
+        },
+        "PE": {
+            "openInterest": "8,514",
+            "changeinOpenInterest": 288,
+            "totalTradedVolume": "1,19,597",
+            "impliedVolatility": 116.23,
+            "lastPrice": 1.1,
+            "change": -0.7,
+            "underlyingValue": 44275.3,
+            "premium": 0.2,
+            "delta": -0.0003,
+            "gamma": 0,
+            "vega": 0.0247,
+            "theta": -1.8683,
+            "rho": -0.0003,
+            "iv": 0,
+            "timeValue": 1.1
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 37500,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "2,967",
+            "changeinOpenInterest": 1622,
+            "totalTradedVolume": "81,815",
+            "impliedVolatility": 111.67,
+            "lastPrice": 1.05,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.32,
+            "delta": -0.0005,
+            "gamma": 0,
+            "vega": 0.0375,
+            "theta": -2.7313,
+            "rho": -0.0005,
+            "iv": 0,
+            "timeValue": 1.05
+        },
+        "CE": {
+            "strikePrice": 37500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 6783.16,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -10.2718,
+            "rho": 0.7859,
+            "iv": 6775.3,
+            "timeValue": -6775.3
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 38000,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 38000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 6283.26,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -10.4088,
+            "rho": 0.7964,
+            "iv": 6275.3,
+            "timeValue": -6275.3
+        },
+        "PE": {
+            "openInterest": "13,077",
+            "changeinOpenInterest": 6179,
+            "totalTradedVolume": "85,915",
+            "impliedVolatility": 101.47,
+            "lastPrice": 1.15,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.25,
+            "delta": -0.0005,
+            "gamma": 0,
+            "vega": 0.0329,
+            "theta": -2.1781,
+            "rho": -0.0004,
+            "iv": 0,
+            "timeValue": 1.15
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 38500,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "4,535",
+            "changeinOpenInterest": 1970,
+            "totalTradedVolume": "62,425",
+            "impliedVolatility": 92.8,
+            "lastPrice": 1.4,
+            "change": -0.6,
+            "underlyingValue": 44275.3,
+            "premium": 0.23,
+            "delta": -0.0005,
+            "gamma": 0,
+            "vega": 0.0331,
+            "theta": -2.0038,
+            "rho": -0.0004,
+            "iv": 0,
+            "timeValue": 1.4
+        },
+        "CE": {
+            "strikePrice": 38500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 5783.37,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -10.5457,
+            "rho": 0.8068,
+            "iv": 5775.3,
+            "timeValue": -5775.3
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 39000,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "9,655",
+            "changeinOpenInterest": 2672,
+            "totalTradedVolume": "70,069",
+            "impliedVolatility": 83.87,
+            "lastPrice": 1,
+            "change": -1,
+            "underlyingValue": 44275.3,
+            "premium": 0.2,
+            "delta": -0.0004,
+            "gamma": 0,
+            "vega": 0.0318,
+            "theta": -1.7357,
+            "rho": -0.0004,
+            "iv": 0,
+            "timeValue": 1
+        },
+        "CE": {
+            "strikePrice": 39000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "4",
+            "changeinOpenInterest": -1,
+            "totalTradedVolume": "1",
+            "impliedVolatility": 0,
+            "lastPrice": 5250,
+            "change": 300,
+            "underlyingValue": 44275.3,
+            "premium": 5283.47,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -10.6827,
+            "rho": 0.8173,
+            "iv": 5275.3,
+            "timeValue": -25.3
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 39500,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "10,196",
+            "changeinOpenInterest": 950,
+            "totalTradedVolume": "43,577",
+            "impliedVolatility": 77.77,
+            "lastPrice": 1.3,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.26,
+            "delta": -0.0006,
+            "gamma": 0,
+            "vega": 0.044,
+            "theta": -2.2303,
+            "rho": -0.0006,
+            "iv": 0,
+            "timeValue": 1.3
+        },
+        "CE": {
+            "strikePrice": 39500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "34",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 4575.15,
+            "change": 0.3,
+            "underlyingValue": 44275.3,
+            "premium": 4783.58,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -10.8196,
+            "rho": 0.8278,
+            "iv": 4775.3,
+            "timeValue": -200.15
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 40000,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "17,221",
+            "changeinOpenInterest": -6031,
+            "totalTradedVolume": "1,34,971",
+            "impliedVolatility": 69.96,
+            "lastPrice": 1.3,
+            "change": -0.8,
+            "underlyingValue": 44275.3,
+            "premium": 0.27,
+            "delta": -0.0007,
+            "gamma": 0,
+            "vega": 0.0494,
+            "theta": -2.2514,
+            "rho": -0.0007,
+            "iv": 0,
+            "timeValue": 1.3
+        },
+        "CE": {
+            "strikePrice": 40000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "70",
+            "changeinOpenInterest": -45,
+            "totalTradedVolume": "53",
+            "impliedVolatility": 85.4,
+            "lastPrice": 4293.6,
+            "change": 133.6,
+            "underlyingValue": 44275.3,
+            "premium": 4286.07,
+            "delta": 0.9956,
+            "gamma": 0,
+            "vega": 0.2599,
+            "theta": -25.4083,
+            "rho": 0.8342,
+            "iv": 4275.3,
+            "timeValue": 18.3
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 40200,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 40200,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "8",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 3960,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 4083.73,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.0114,
+            "rho": 0.8425,
+            "iv": 4075.3,
+            "timeValue": -115.3
+        },
+        "PE": {
+            "openInterest": "1,141",
+            "changeinOpenInterest": 632,
+            "totalTradedVolume": "18,046",
+            "impliedVolatility": 66.84,
+            "lastPrice": 1.25,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.27,
+            "delta": -0.0007,
+            "gamma": 0,
+            "vega": 0.0519,
+            "theta": -2.2587,
+            "rho": -0.0007,
+            "iv": 0,
+            "timeValue": 1.25
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 40300,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "925",
+            "changeinOpenInterest": 22,
+            "totalTradedVolume": "12,652",
+            "impliedVolatility": 65.53,
+            "lastPrice": 1.3,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.29,
+            "delta": -0.0008,
+            "gamma": 0,
+            "vega": 0.0553,
+            "theta": -2.3582,
+            "rho": -0.0007,
+            "iv": 0,
+            "timeValue": 1.3
+        },
+        "CE": {
+            "strikePrice": 40300,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 3983.75,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.0388,
+            "rho": 0.8446,
+            "iv": 3975.3,
+            "timeValue": -3975.3
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 40400,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "864",
+            "changeinOpenInterest": 194,
+            "totalTradedVolume": "12,462",
+            "impliedVolatility": 62.65,
+            "lastPrice": 1.05,
+            "change": -1.1,
+            "underlyingValue": 44275.3,
+            "premium": 0.22,
+            "delta": -0.0007,
+            "gamma": 0,
+            "vega": 0.0461,
+            "theta": -1.8775,
+            "rho": -0.0006,
+            "iv": 0,
+            "timeValue": 1.05
+        },
+        "CE": {
+            "strikePrice": 40400,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 3883.77,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.0662,
+            "rho": 0.8467,
+            "iv": 3875.3,
+            "timeValue": -3875.3
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 40500,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "10,414",
+            "changeinOpenInterest": -2660,
+            "totalTradedVolume": "72,883",
+            "impliedVolatility": 61.92,
+            "lastPrice": 1.35,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.27,
+            "delta": -0.0008,
+            "gamma": 0,
+            "vega": 0.054,
+            "theta": -2.1738,
+            "rho": -0.0007,
+            "iv": 0,
+            "timeValue": 1.35
+        },
+        "CE": {
+            "strikePrice": 40500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "66",
+            "changeinOpenInterest": -18,
+            "totalTradedVolume": "52",
+            "impliedVolatility": 0,
+            "lastPrice": 3711.55,
+            "change": 51.6,
+            "underlyingValue": 44275.3,
+            "premium": 3783.79,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.0936,
+            "rho": 0.8488,
+            "iv": 3775.3,
+            "timeValue": -63.75
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 40600,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 40600,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "4",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 3600,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 3683.81,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.121,
+            "rho": 0.8508,
+            "iv": 3675.3,
+            "timeValue": -75.3
+        },
+        "PE": {
+            "openInterest": "445",
+            "changeinOpenInterest": -162,
+            "totalTradedVolume": "6,750",
+            "impliedVolatility": 60.62,
+            "lastPrice": 1.25,
+            "change": -0.8,
+            "underlyingValue": 44275.3,
+            "premium": 0.28,
+            "delta": -0.0008,
+            "gamma": 0,
+            "vega": 0.0578,
+            "theta": -2.2778,
+            "rho": -0.0008,
+            "iv": 0,
+            "timeValue": 1.25
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 40700,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "2,270",
+            "changeinOpenInterest": 572,
+            "totalTradedVolume": "19,438",
+            "impliedVolatility": 58.82,
+            "lastPrice": 1.3,
+            "change": -0.7,
+            "underlyingValue": 44275.3,
+            "premium": 0.27,
+            "delta": -0.0008,
+            "gamma": 0,
+            "vega": 0.057,
+            "theta": -2.1821,
+            "rho": -0.0008,
+            "iv": 0,
+            "timeValue": 1.3
+        },
+        "CE": {
+            "strikePrice": 40700,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "1",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 3400,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 3583.83,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.1483,
+            "rho": 0.8529,
+            "iv": 3575.3,
+            "timeValue": -175.3
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 40800,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 40800,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "3",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 2999,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 3483.85,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.1757,
+            "rho": 0.855,
+            "iv": 3475.3,
+            "timeValue": -476.3
+        },
+        "PE": {
+            "openInterest": "3,054",
+            "changeinOpenInterest": 128,
+            "totalTradedVolume": "12,602",
+            "impliedVolatility": 59.72,
+            "lastPrice": 1.8,
+            "change": -0.2,
+            "underlyingValue": 44275.3,
+            "premium": 0.45,
+            "delta": -0.0013,
+            "gamma": 0,
+            "vega": 0.0869,
+            "theta": -3.3756,
+            "rho": -0.0012,
+            "iv": 0,
+            "timeValue": 1.8
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 40900,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 40900,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 3383.87,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.2031,
+            "rho": 0.8571,
+            "iv": 3375.3,
+            "timeValue": -3375.3
+        },
+        "PE": {
+            "openInterest": "2,466",
+            "changeinOpenInterest": 197,
+            "totalTradedVolume": "17,617",
+            "impliedVolatility": 56.39,
+            "lastPrice": 1.2,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.32,
+            "delta": -0.001,
+            "gamma": 0,
+            "vega": 0.0678,
+            "theta": -2.4857,
+            "rho": -0.0009,
+            "iv": 0,
+            "timeValue": 1.2
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 41000,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "49,605",
+            "changeinOpenInterest": -4835,
+            "totalTradedVolume": "2,36,496",
+            "impliedVolatility": 55.04,
+            "lastPrice": 1.5,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.33,
+            "delta": -0.0011,
+            "gamma": 0,
+            "vega": 0.0725,
+            "theta": -2.5934,
+            "rho": -0.001,
+            "iv": 0,
+            "timeValue": 1.5
+        },
+        "CE": {
+            "strikePrice": 41000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "138",
+            "changeinOpenInterest": -15,
+            "totalTradedVolume": "43",
+            "impliedVolatility": 0,
+            "lastPrice": 3280,
+            "change": 181,
+            "underlyingValue": 44275.3,
+            "premium": 3283.89,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.2305,
+            "rho": 0.8592,
+            "iv": 3275.3,
+            "timeValue": 4.7
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 41100,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 41100,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "10",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 3085.2,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 3183.91,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.2579,
+            "rho": 0.8613,
+            "iv": 3175.3,
+            "timeValue": -90.1
+        },
+        "PE": {
+            "openInterest": "3,430",
+            "changeinOpenInterest": 190,
+            "totalTradedVolume": "18,041",
+            "impliedVolatility": 52.85,
+            "lastPrice": 1.45,
+            "change": -0.8,
+            "underlyingValue": 44275.3,
+            "premium": 0.29,
+            "delta": -0.001,
+            "gamma": 0,
+            "vega": 0.067,
+            "theta": -2.3012,
+            "rho": -0.0009,
+            "iv": 0,
+            "timeValue": 1.45
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 41200,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "5,384",
+            "changeinOpenInterest": 40,
+            "totalTradedVolume": "33,297",
+            "impliedVolatility": 50.4,
+            "lastPrice": 1.05,
+            "change": -1.3,
+            "underlyingValue": 44275.3,
+            "premium": 0.24,
+            "delta": -0.0008,
+            "gamma": 0,
+            "vega": 0.0584,
+            "theta": -1.9125,
+            "rho": -0.0008,
+            "iv": 0,
+            "timeValue": 1.05
+        },
+        "CE": {
+            "strikePrice": 41200,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "3",
+            "changeinOpenInterest": -2,
+            "totalTradedVolume": "2",
+            "impliedVolatility": 0,
+            "lastPrice": 3065,
+            "change": 287.5,
+            "underlyingValue": 44275.3,
+            "premium": 3083.94,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.2853,
+            "rho": 0.8634,
+            "iv": 3075.3,
+            "timeValue": -10.3
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 41300,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 41300,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 2983.96,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.3127,
+            "rho": 0.8655,
+            "iv": 2975.3,
+            "timeValue": -2975.3
+        },
+        "PE": {
+            "openInterest": "3,929",
+            "changeinOpenInterest": 302,
+            "totalTradedVolume": "37,923",
+            "impliedVolatility": 49.54,
+            "lastPrice": 1.5,
+            "change": -1,
+            "underlyingValue": 44275.3,
+            "premium": 0.28,
+            "delta": -0.001,
+            "gamma": 0,
+            "vega": 0.0688,
+            "theta": -2.2152,
+            "rho": -0.0009,
+            "iv": 0,
+            "timeValue": 1.5
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 41400,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "2,885",
+            "changeinOpenInterest": -116,
+            "totalTradedVolume": "44,043",
+            "impliedVolatility": 50.1,
+            "lastPrice": 1.9,
+            "change": -0.6,
+            "underlyingValue": 44275.3,
+            "premium": 0.47,
+            "delta": -0.0016,
+            "gamma": 0,
+            "vega": 0.1049,
+            "theta": -3.4143,
+            "rho": -0.0015,
+            "iv": 0,
+            "timeValue": 1.9
+        },
+        "CE": {
+            "strikePrice": 41400,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "2",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 2725.75,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 2883.98,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.3401,
+            "rho": 0.8676,
+            "iv": 2875.3,
+            "timeValue": -149.55
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 41500,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 41500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "704",
+            "changeinOpenInterest": -43,
+            "totalTradedVolume": "283",
+            "impliedVolatility": 0,
+            "lastPrice": 2771.4,
+            "change": 86.2,
+            "underlyingValue": 44275.3,
+            "premium": 2784,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.3675,
+            "rho": 0.8697,
+            "iv": 2775.3,
+            "timeValue": -3.9
+        },
+        "PE": {
+            "openInterest": "34,570",
+            "changeinOpenInterest": -14286,
+            "totalTradedVolume": "3,07,104",
+            "impliedVolatility": 47.37,
+            "lastPrice": 1.6,
+            "change": -1,
+            "underlyingValue": 44275.3,
+            "premium": 0.36,
+            "delta": -0.0013,
+            "gamma": 0,
+            "vega": 0.0884,
+            "theta": -2.7208,
+            "rho": -0.0012,
+            "iv": 0,
+            "timeValue": 1.6
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 41600,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 41600,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "23",
+            "changeinOpenInterest": 9,
+            "totalTradedVolume": "11",
+            "impliedVolatility": 0,
+            "lastPrice": 2620,
+            "change": 223.4,
+            "underlyingValue": 44275.3,
+            "premium": 2684.02,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.3949,
+            "rho": 0.8718,
+            "iv": 2675.3,
+            "timeValue": -55.3
+        },
+        "PE": {
+            "openInterest": "4,202",
+            "changeinOpenInterest": -77,
+            "totalTradedVolume": "52,419",
+            "impliedVolatility": 46.88,
+            "lastPrice": 1.1,
+            "change": -1.6,
+            "underlyingValue": 44275.3,
+            "premium": 0.48,
+            "delta": -0.0017,
+            "gamma": 0,
+            "vega": 0.1124,
+            "theta": -3.4223,
+            "rho": -0.0016,
+            "iv": 0,
+            "timeValue": 1.1
+        },
+        "CE_A": {
+            "i": "Short Covering"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 41700,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "9,645",
+            "changeinOpenInterest": 1002,
+            "totalTradedVolume": "56,347",
+            "impliedVolatility": 45.55,
+            "lastPrice": 1.45,
+            "change": -1.4,
+            "underlyingValue": 44275.3,
+            "premium": 0.51,
+            "delta": -0.0019,
+            "gamma": 0,
+            "vega": 0.1228,
+            "theta": -3.6315,
+            "rho": -0.0018,
+            "iv": 0,
+            "timeValue": 1.45
+        },
+        "CE": {
+            "strikePrice": 41700,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "209",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 2461.55,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 2584.04,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.4223,
+            "rho": 0.8739,
+            "iv": 2575.3,
+            "timeValue": -113.75
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 41800,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 41800,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "84",
+            "changeinOpenInterest": -43,
+            "totalTradedVolume": "45",
+            "impliedVolatility": 0,
+            "lastPrice": 2480,
+            "change": 170,
+            "underlyingValue": 44275.3,
+            "premium": 2484.06,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.4497,
+            "rho": 0.876,
+            "iv": 2475.3,
+            "timeValue": 4.7
+        },
+        "PE": {
+            "openInterest": "6,388",
+            "changeinOpenInterest": -925,
+            "totalTradedVolume": "75,039",
+            "impliedVolatility": 42.64,
+            "lastPrice": 1.9,
+            "change": -1,
+            "underlyingValue": 44275.3,
+            "premium": 0.37,
+            "delta": -0.0015,
+            "gamma": 0,
+            "vega": 0.099,
+            "theta": -2.7404,
+            "rho": -0.0014,
+            "iv": 0,
+            "timeValue": 1.9
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 41900,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "6,163",
+            "changeinOpenInterest": -1993,
+            "totalTradedVolume": "84,451",
+            "impliedVolatility": 42.19,
+            "lastPrice": 1.55,
+            "change": -1.6,
+            "underlyingValue": 44275.3,
+            "premium": 0.51,
+            "delta": -0.002,
+            "gamma": 0,
+            "vega": 0.1296,
+            "theta": -3.5494,
+            "rho": -0.0019,
+            "iv": 0,
+            "timeValue": 1.55
+        },
+        "CE": {
+            "strikePrice": 41900,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "346",
+            "changeinOpenInterest": -5,
+            "totalTradedVolume": "14",
+            "impliedVolatility": 0,
+            "lastPrice": 2372,
+            "change": 148.9,
+            "underlyingValue": 44275.3,
+            "premium": 2384.08,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.477,
+            "rho": 0.8781,
+            "iv": 2375.3,
+            "timeValue": -3.3
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 42000,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "96,039",
+            "changeinOpenInterest": -18864,
+            "totalTradedVolume": "7,26,743",
+            "impliedVolatility": 41.17,
+            "lastPrice": 2.35,
+            "change": -1.1,
+            "underlyingValue": 44275.3,
+            "premium": 0.6,
+            "delta": -0.0024,
+            "gamma": 0,
+            "vega": 0.1519,
+            "theta": -4.0577,
+            "rho": -0.0022,
+            "iv": 0,
+            "timeValue": 2.35
+        },
+        "CE": {
+            "strikePrice": 42000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "1,018",
+            "changeinOpenInterest": -134,
+            "totalTradedVolume": "347",
+            "impliedVolatility": 0,
+            "lastPrice": 2276,
+            "change": 111.3,
+            "underlyingValue": 44275.3,
+            "premium": 2284.1,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.5044,
+            "rho": 0.8802,
+            "iv": 2275.3,
+            "timeValue": 0.7
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 42100,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 42100,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "58",
+            "changeinOpenInterest": -13,
+            "totalTradedVolume": "49",
+            "impliedVolatility": 0,
+            "lastPrice": 2184.05,
+            "change": 85.5,
+            "underlyingValue": 44275.3,
+            "premium": 2184.12,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.5318,
+            "rho": 0.8823,
+            "iv": 2175.3,
+            "timeValue": 8.75
+        },
+        "PE": {
+            "openInterest": "7,249",
+            "changeinOpenInterest": -1415,
+            "totalTradedVolume": "1,29,861",
+            "impliedVolatility": 39.42,
+            "lastPrice": 2,
+            "change": -1.5,
+            "underlyingValue": 44275.3,
+            "premium": 0.59,
+            "delta": -0.0025,
+            "gamma": 0,
+            "vega": 0.1551,
+            "theta": -3.9659,
+            "rho": -0.0023,
+            "iv": 0,
+            "timeValue": 2
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 42200,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "12,535",
+            "changeinOpenInterest": -3309,
+            "totalTradedVolume": "1,71,908",
+            "impliedVolatility": 37.78,
+            "lastPrice": 2.5,
+            "change": -1.1,
+            "underlyingValue": 44275.3,
+            "premium": 0.59,
+            "delta": -0.0026,
+            "gamma": 0,
+            "vega": 0.1622,
+            "theta": -3.9723,
+            "rho": -0.0024,
+            "iv": 0,
+            "timeValue": 2.5
+        },
+        "CE": {
+            "strikePrice": 42200,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "92",
+            "changeinOpenInterest": -12,
+            "totalTradedVolume": "452",
+            "impliedVolatility": 0,
+            "lastPrice": 2081.25,
+            "change": 71,
+            "underlyingValue": 44275.3,
+            "premium": 2084.14,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.5592,
+            "rho": 0.8844,
+            "iv": 2075.3,
+            "timeValue": 5.95
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 42300,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 42300,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "245",
+            "changeinOpenInterest": -13,
+            "totalTradedVolume": "28",
+            "impliedVolatility": 0,
+            "lastPrice": 1974.1,
+            "change": 182.9,
+            "underlyingValue": 44275.3,
+            "premium": 1984.17,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.5866,
+            "rho": 0.8865,
+            "iv": 1975.3,
+            "timeValue": -1.2
+        },
+        "PE": {
+            "openInterest": "8,336",
+            "changeinOpenInterest": -6915,
+            "totalTradedVolume": "1,72,799",
+            "impliedVolatility": 36.14,
+            "lastPrice": 1.95,
+            "change": -1.8,
+            "underlyingValue": 44275.3,
+            "premium": 0.6,
+            "delta": -0.0027,
+            "gamma": 0,
+            "vega": 0.17,
+            "theta": -3.9819,
+            "rho": -0.0025,
+            "iv": 0,
+            "timeValue": 1.95
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 42400,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "10,187",
+            "changeinOpenInterest": -423,
+            "totalTradedVolume": "1,97,811",
+            "impliedVolatility": 35.85,
+            "lastPrice": 2.8,
+            "change": -1.1,
+            "underlyingValue": 44275.3,
+            "premium": 0.89,
+            "delta": -0.0039,
+            "gamma": 0,
+            "vega": 0.2365,
+            "theta": -5.494,
+            "rho": -0.0037,
+            "iv": 0,
+            "timeValue": 2.8
+        },
+        "CE": {
+            "strikePrice": 42400,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "47",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "10",
+            "impliedVolatility": 0,
+            "lastPrice": 1872,
+            "change": 159.1,
+            "underlyingValue": 44275.3,
+            "premium": 1884.19,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.614,
+            "rho": 0.8886,
+            "iv": 1875.3,
+            "timeValue": -3.3
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 42500,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 42500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "665",
+            "changeinOpenInterest": -119,
+            "totalTradedVolume": "332",
+            "impliedVolatility": 0,
+            "lastPrice": 1778,
+            "change": 67.6,
+            "underlyingValue": 44275.3,
+            "premium": 1784.21,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.6414,
+            "rho": 0.8907,
+            "iv": 1775.3,
+            "timeValue": 2.7
+        },
+        "PE": {
+            "openInterest": "67,520",
+            "changeinOpenInterest": -7787,
+            "totalTradedVolume": "7,41,970",
+            "impliedVolatility": 33.13,
+            "lastPrice": 2.25,
+            "change": -2,
+            "underlyingValue": 44275.3,
+            "premium": 0.67,
+            "delta": -0.0033,
+            "gamma": 0,
+            "vega": 0.2004,
+            "theta": -4.2999,
+            "rho": -0.003,
+            "iv": 0,
+            "timeValue": 2.25
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 42600,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "15,170",
+            "changeinOpenInterest": -4319,
+            "totalTradedVolume": "2,01,190",
+            "impliedVolatility": 31.81,
+            "lastPrice": 2.8,
+            "change": -1.5,
+            "underlyingValue": 44275.3,
+            "premium": 0.76,
+            "delta": -0.0038,
+            "gamma": 0,
+            "vega": 0.2288,
+            "theta": -4.7107,
+            "rho": -0.0035,
+            "iv": 0,
+            "timeValue": 2.8
+        },
+        "CE": {
+            "strikePrice": 42600,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "90",
+            "changeinOpenInterest": -4,
+            "totalTradedVolume": "4",
+            "impliedVolatility": 0,
+            "lastPrice": 1685,
+            "change": 70.9,
+            "underlyingValue": 44275.3,
+            "premium": 1684.23,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.6688,
+            "rho": 0.8928,
+            "iv": 1675.3,
+            "timeValue": 9.7
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 42700,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 42700,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "89",
+            "changeinOpenInterest": -10,
+            "totalTradedVolume": "23",
+            "impliedVolatility": 0,
+            "lastPrice": 1555,
+            "change": 76.5,
+            "underlyingValue": 44275.3,
+            "premium": 1584.25,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.6962,
+            "rho": 0.8949,
+            "iv": 1575.3,
+            "timeValue": -20.3
+        },
+        "PE": {
+            "openInterest": "51,300",
+            "changeinOpenInterest": 33029,
+            "totalTradedVolume": "3,40,119",
+            "impliedVolatility": 31.08,
+            "lastPrice": 2.6,
+            "change": -1.9,
+            "underlyingValue": 44275.3,
+            "premium": 1.03,
+            "delta": -0.0051,
+            "gamma": 0,
+            "vega": 0.2992,
+            "theta": -6.0149,
+            "rho": -0.0048,
+            "iv": 0,
+            "timeValue": 2.6
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 42800,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 42800,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "786",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "287",
+            "impliedVolatility": 0,
+            "lastPrice": 1475.55,
+            "change": 70.8,
+            "underlyingValue": 44275.3,
+            "premium": 1484.27,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.7236,
+            "rho": 0.897,
+            "iv": 1475.3,
+            "timeValue": 0.25
+        },
+        "PE": {
+            "openInterest": "34,733",
+            "changeinOpenInterest": -3576,
+            "totalTradedVolume": "3,67,445",
+            "impliedVolatility": 28.43,
+            "lastPrice": 2.2,
+            "change": -2.6,
+            "underlyingValue": 44275.3,
+            "premium": 0.78,
+            "delta": -0.0043,
+            "gamma": 0,
+            "vega": 0.2571,
+            "theta": -4.7246,
+            "rho": -0.004,
+            "iv": 0,
+            "timeValue": 2.2
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 42900,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "23,821",
+            "changeinOpenInterest": -6877,
+            "totalTradedVolume": "3,32,636",
+            "impliedVolatility": 27.22,
+            "lastPrice": 3.6,
+            "change": -2,
+            "underlyingValue": 44275.3,
+            "premium": 0.93,
+            "delta": -0.0053,
+            "gamma": 0,
+            "vega": 0.3091,
+            "theta": -5.4342,
+            "rho": -0.0049,
+            "iv": 0,
+            "timeValue": 3.6
+        },
+        "CE": {
+            "strikePrice": 42900,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "287",
+            "changeinOpenInterest": -28,
+            "totalTradedVolume": "97",
+            "impliedVolatility": 0,
+            "lastPrice": 1377.95,
+            "change": 73.6,
+            "underlyingValue": 44275.3,
+            "premium": 1384.29,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.751,
+            "rho": 0.899,
+            "iv": 1375.3,
+            "timeValue": 2.65
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 43000,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "1,00,427",
+            "changeinOpenInterest": 10156,
+            "totalTradedVolume": "10,37,288",
+            "impliedVolatility": 25.79,
+            "lastPrice": 3,
+            "change": -3.3,
+            "underlyingValue": 44275.3,
+            "premium": 1.05,
+            "delta": -0.0062,
+            "gamma": 0,
+            "vega": 0.3563,
+            "theta": -5.9289,
+            "rho": -0.0058,
+            "iv": 0,
+            "timeValue": 3
+        },
+        "CE": {
+            "strikePrice": 43000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "3,283",
+            "changeinOpenInterest": -980,
+            "totalTradedVolume": "4,051",
+            "impliedVolatility": 0,
+            "lastPrice": 1274.2,
+            "change": 83,
+            "underlyingValue": 44275.3,
+            "premium": 1284.31,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.7784,
+            "rho": 0.9011,
+            "iv": 1275.3,
+            "timeValue": -1.1
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 43100,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 43100,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "267",
+            "changeinOpenInterest": -41,
+            "totalTradedVolume": "542",
+            "impliedVolatility": 0,
+            "lastPrice": 1179.5,
+            "change": 79,
+            "underlyingValue": 44275.3,
+            "premium": 1184.33,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.8057,
+            "rho": 0.9032,
+            "iv": 1175.3,
+            "timeValue": 4.2
+        },
+        "PE": {
+            "openInterest": "19,756",
+            "changeinOpenInterest": -2664,
+            "totalTradedVolume": "3,32,186",
+            "impliedVolatility": 24.25,
+            "lastPrice": 4,
+            "change": -2.9,
+            "underlyingValue": 44275.3,
+            "premium": 1.16,
+            "delta": -0.0072,
+            "gamma": 0,
+            "vega": 0.4044,
+            "theta": -6.3217,
+            "rho": -0.0067,
+            "iv": 0,
+            "timeValue": 4
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 43200,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "32,991",
+            "changeinOpenInterest": 3713,
+            "totalTradedVolume": "4,78,434",
+            "impliedVolatility": 22.57,
+            "lastPrice": 4,
+            "change": -4.1,
+            "underlyingValue": 44275.3,
+            "premium": 1.23,
+            "delta": -0.0081,
+            "gamma": 0,
+            "vega": 0.4488,
+            "theta": -6.5208,
+            "rho": -0.0075,
+            "iv": 0,
+            "timeValue": 4
+        },
+        "CE": {
+            "strikePrice": 43200,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "706",
+            "changeinOpenInterest": -71,
+            "totalTradedVolume": "1,287",
+            "impliedVolatility": 0,
+            "lastPrice": 1079.25,
+            "change": 77.8,
+            "underlyingValue": 44275.3,
+            "premium": 1084.35,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.8331,
+            "rho": 0.9053,
+            "iv": 1075.3,
+            "timeValue": 3.95
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 43300,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 43300,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "703",
+            "changeinOpenInterest": -48,
+            "totalTradedVolume": "1,596",
+            "impliedVolatility": 0,
+            "lastPrice": 979.75,
+            "change": 71,
+            "underlyingValue": 44275.3,
+            "premium": 984.38,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.8605,
+            "rho": 0.9074,
+            "iv": 975.3,
+            "timeValue": 4.45
+        },
+        "PE": {
+            "openInterest": "31,093",
+            "changeinOpenInterest": -8834,
+            "totalTradedVolume": "5,33,278",
+            "impliedVolatility": 21.3,
+            "lastPrice": 4.3,
+            "change": -5.6,
+            "underlyingValue": 44275.3,
+            "premium": 1.54,
+            "delta": -0.0104,
+            "gamma": 0.0001,
+            "vega": 0.5605,
+            "theta": -7.6753,
+            "rho": -0.0097,
+            "iv": 0,
+            "timeValue": 4.3
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 43400,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "35,756",
+            "changeinOpenInterest": -5238,
+            "totalTradedVolume": "6,57,300",
+            "impliedVolatility": 19.82,
+            "lastPrice": 4.4,
+            "change": -7.8,
+            "underlyingValue": 44275.3,
+            "premium": 1.82,
+            "delta": -0.0129,
+            "gamma": 0.0001,
+            "vega": 0.6757,
+            "theta": -8.5953,
+            "rho": -0.012,
+            "iv": 0,
+            "timeValue": 4.4
+        },
+        "CE": {
+            "strikePrice": 43400,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "872",
+            "changeinOpenInterest": -432,
+            "totalTradedVolume": "3,775",
+            "impliedVolatility": 0,
+            "lastPrice": 877.7,
+            "change": 76.6,
+            "underlyingValue": 44275.3,
+            "premium": 884.4,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.8879,
+            "rho": 0.9095,
+            "iv": 875.3,
+            "timeValue": 2.4
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 43500,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 43500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "13,553",
+            "changeinOpenInterest": -1726,
+            "totalTradedVolume": "43,367",
+            "impliedVolatility": 0,
+            "lastPrice": 781,
+            "change": 73.8,
+            "underlyingValue": 44275.3,
+            "premium": 784.42,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.9153,
+            "rho": 0.9116,
+            "iv": 775.3,
+            "timeValue": 5.7
+        },
+        "PE": {
+            "openInterest": "1,17,082",
+            "changeinOpenInterest": 16417,
+            "totalTradedVolume": "13,57,987",
+            "impliedVolatility": 18.68,
+            "lastPrice": 6,
+            "change": -10.4,
+            "underlyingValue": 44275.3,
+            "premium": 2.49,
+            "delta": -0.0181,
+            "gamma": 0.0001,
+            "vega": 0.9021,
+            "theta": -10.792,
+            "rho": -0.0169,
+            "iv": 0,
+            "timeValue": 6
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 43600,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "50,786",
+            "changeinOpenInterest": -18260,
+            "totalTradedVolume": "10,76,492",
+            "impliedVolatility": 17.3,
+            "lastPrice": 9,
+            "change": -13.4,
+            "underlyingValue": 44275.3,
+            "premium": 3.23,
+            "delta": -0.0244,
+            "gamma": 0.0002,
+            "vega": 1.1595,
+            "theta": -12.8125,
+            "rho": -0.0227,
+            "iv": 0,
+            "timeValue": 9
+        },
+        "CE": {
+            "strikePrice": 43600,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "2,367",
+            "changeinOpenInterest": -835,
+            "totalTradedVolume": "34,609",
+            "impliedVolatility": 0,
+            "lastPrice": 681,
+            "change": 65.9,
+            "underlyingValue": 44275.3,
+            "premium": 684.44,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.9427,
+            "rho": 0.9137,
+            "iv": 675.3,
+            "timeValue": 5.7
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 43700,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "92,263",
+            "changeinOpenInterest": 23325,
+            "totalTradedVolume": "13,09,239",
+            "impliedVolatility": 16.42,
+            "lastPrice": 11.45,
+            "change": -20.4,
+            "underlyingValue": 44275.3,
+            "premium": 5.12,
+            "delta": -0.0382,
+            "gamma": 0.0002,
+            "vega": 1.6842,
+            "theta": -17.608,
+            "rho": -0.0356,
+            "iv": 0,
+            "timeValue": 11.45
+        },
+        "CE": {
+            "strikePrice": 43700,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "15,047",
+            "changeinOpenInterest": -961,
+            "totalTradedVolume": "1,22,166",
+            "impliedVolatility": 0,
+            "lastPrice": 585.5,
+            "change": 65.4,
+            "underlyingValue": 44275.3,
+            "premium": 584.46,
+            "delta": 1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": -11.9701,
+            "rho": 0.9158,
+            "iv": 575.3,
+            "timeValue": 10.2
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 43800,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "99,741",
+            "changeinOpenInterest": 23047,
+            "totalTradedVolume": "18,53,618",
+            "impliedVolatility": 15.44,
+            "lastPrice": 16,
+            "change": -29.7,
+            "underlyingValue": 44275.3,
+            "premium": 8.01,
+            "delta": -0.0594,
+            "gamma": 0.0004,
+            "vega": 2.3951,
+            "theta": -23.4446,
+            "rho": -0.0553,
+            "iv": 0,
+            "timeValue": 16
+        },
+        "CE": {
+            "strikePrice": 43800,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "13,837",
+            "changeinOpenInterest": -3474,
+            "totalTradedVolume": "3,04,756",
+            "impliedVolatility": 9.08,
+            "lastPrice": 489.95,
+            "change": 57,
+            "underlyingValue": 44275.3,
+            "premium": 484.71,
+            "delta": 0.996,
+            "gamma": 0.0001,
+            "vega": 0.2422,
+            "theta": -13.3859,
+            "rho": 0.9142,
+            "iv": 475.3,
+            "timeValue": 14.65
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 43900,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 43900,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "15,629",
+            "changeinOpenInterest": -3737,
+            "totalTradedVolume": "6,47,214",
+            "impliedVolatility": 12.25,
+            "lastPrice": 400,
+            "change": 46.1,
+            "underlyingValue": 44275.3,
+            "premium": 390.88,
+            "delta": 0.9404,
+            "gamma": 0.0005,
+            "vega": 2.4026,
+            "theta": -30.5346,
+            "rho": 0.8645,
+            "iv": 375.3,
+            "timeValue": 24.7
+        },
+        "PE": {
+            "openInterest": "90,073",
+            "changeinOpenInterest": 20471,
+            "totalTradedVolume": "20,59,870",
+            "impliedVolatility": 15,
+            "lastPrice": 23,
+            "change": -41,
+            "underlyingValue": 44275.3,
+            "premium": 14.68,
+            "delta": -0.1014,
+            "gamma": 0.0006,
+            "vega": 3.5942,
+            "theta": -33.9994,
+            "rho": -0.0944,
+            "iv": 0,
+            "timeValue": 23
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 44000,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 44000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "96,729",
+            "changeinOpenInterest": 2135,
+            "totalTradedVolume": "25,69,086",
+            "impliedVolatility": 12.35,
+            "lastPrice": 310,
+            "change": 29.3,
+            "underlyingValue": 44275.3,
+            "premium": 300.33,
+            "delta": 0.8735,
+            "gamma": 0.0008,
+            "vega": 4.208,
+            "theta": -44.4763,
+            "rho": 0.8044,
+            "iv": 275.3,
+            "timeValue": 34.7
+        },
+        "PE": {
+            "openInterest": "2,12,920",
+            "changeinOpenInterest": 48868,
+            "totalTradedVolume": "42,55,902",
+            "impliedVolatility": 14.45,
+            "lastPrice": 36.65,
+            "change": -52.1,
+            "underlyingValue": 44275.3,
+            "premium": 25.53,
+            "delta": -0.1641,
+            "gamma": 0.0008,
+            "vega": 5.0138,
+            "theta": -45.35,
+            "rho": -0.1528,
+            "iv": 0,
+            "timeValue": 36.65
+        },
+        "CE_A": {
+            "i": "Short Covering"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 44100,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 44100,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "58,916",
+            "changeinOpenInterest": -13477,
+            "totalTradedVolume": "29,56,040",
+            "impliedVolatility": 12.45,
+            "lastPrice": 231,
+            "change": 18.1,
+            "underlyingValue": 44275.3,
+            "premium": 218.57,
+            "delta": 0.769,
+            "gamma": 0.0012,
+            "vega": 6.1699,
+            "theta": -59.4686,
+            "rho": 0.7091,
+            "iv": 175.3,
+            "timeValue": 55.7
+        },
+        "PE": {
+            "openInterest": "1,14,060",
+            "changeinOpenInterest": 16180,
+            "totalTradedVolume": "36,27,060",
+            "impliedVolatility": 14.3,
+            "lastPrice": 59.35,
+            "change": -64.3,
+            "underlyingValue": 44275.3,
+            "premium": 45.85,
+            "delta": -0.2607,
+            "gamma": 0.0011,
+            "vega": 6.584,
+            "theta": -58.3554,
+            "rho": -0.2429,
+            "iv": 0,
+            "timeValue": 59.35
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 44200,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 44200,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "1,35,284",
+            "changeinOpenInterest": -3219,
+            "totalTradedVolume": "58,73,647",
+            "impliedVolatility": 12.57,
+            "lastPrice": 162.4,
+            "change": 3.3,
+            "underlyingValue": 44275.3,
+            "premium": 149.39,
+            "delta": 0.6312,
+            "gamma": 0.0015,
+            "vega": 7.6454,
+            "theta": -70.421,
+            "rho": 0.5827,
+            "iv": 75.3,
+            "timeValue": 87.1
+        },
+        "PE": {
+            "openInterest": "1,31,790",
+            "changeinOpenInterest": 43647,
+            "totalTradedVolume": "60,75,086",
+            "impliedVolatility": 13.91,
+            "lastPrice": 90,
+            "change": -74.9,
+            "underlyingValue": 44275.3,
+            "premium": 75.12,
+            "delta": -0.3808,
+            "gamma": 0.0014,
+            "vega": 7.7231,
+            "theta": -65.5674,
+            "rho": -0.355,
+            "iv": 0,
+            "timeValue": 90
+        },
+        "CE_A": {
+            "i": "Long Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 44300,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "90,115",
+            "changeinOpenInterest": 52679,
+            "totalTradedVolume": "46,78,399",
+            "impliedVolatility": 13.77,
+            "lastPrice": 133,
+            "change": -86.1,
+            "underlyingValue": 44275.3,
+            "premium": 119.25,
+            "delta": -0.5208,
+            "gamma": 0.0014,
+            "vega": 8.0759,
+            "theta": -66.3254,
+            "rho": -0.4858,
+            "iv": 24.7,
+            "timeValue": 108.3
+        },
+        "CE": {
+            "strikePrice": 44300,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "1,58,261",
+            "changeinOpenInterest": 54940,
+            "totalTradedVolume": "58,64,068",
+            "impliedVolatility": 12.52,
+            "lastPrice": 110,
+            "change": -2.9,
+            "underlyingValue": 44275.3,
+            "premium": 93.74,
+            "delta": 0.4769,
+            "gamma": 0.0016,
+            "vega": 8.0733,
+            "theta": -71.8163,
+            "rho": 0.4407,
+            "iv": 0,
+            "timeValue": 110
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 44400,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 44400,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "1,15,834",
+            "changeinOpenInterest": 33071,
+            "totalTradedVolume": "39,14,541",
+            "impliedVolatility": 12.38,
+            "lastPrice": 65,
+            "change": -11.9,
+            "underlyingValue": 44275.3,
+            "premium": 52.94,
+            "delta": 0.3241,
+            "gamma": 0.0014,
+            "vega": 7.287,
+            "theta": -62.8726,
+            "rho": 0.2996,
+            "iv": 0,
+            "timeValue": 65
+        },
+        "PE": {
+            "openInterest": "35,200",
+            "changeinOpenInterest": 16912,
+            "totalTradedVolume": "25,27,557",
+            "impliedVolatility": 13.88,
+            "lastPrice": 190,
+            "change": -93.9,
+            "underlyingValue": 44275.3,
+            "premium": 179.39,
+            "delta": -0.6578,
+            "gamma": 0.0013,
+            "vega": 7.4458,
+            "theta": -59.5119,
+            "rho": -0.6142,
+            "iv": 124.7,
+            "timeValue": 65.3
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 44500,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "40,001",
+            "changeinOpenInterest": 20619,
+            "totalTradedVolume": "18,69,957",
+            "impliedVolatility": 14.19,
+            "lastPrice": 260,
+            "change": -96.6,
+            "underlyingValue": 44275.3,
+            "premium": 253.39,
+            "delta": -0.7715,
+            "gamma": 0.0011,
+            "vega": 6.1331,
+            "theta": -47.4478,
+            "rho": -0.7213,
+            "iv": 224.7,
+            "timeValue": 35.3
+        },
+        "CE": {
+            "strikePrice": 44500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "1,68,257",
+            "changeinOpenInterest": 56443,
+            "totalTradedVolume": "36,86,238",
+            "impliedVolatility": 12.41,
+            "lastPrice": 37.3,
+            "change": -12.5,
+            "underlyingValue": 44275.3,
+            "premium": 27.53,
+            "delta": 0.1973,
+            "gamma": 0.0011,
+            "vega": 5.6291,
+            "theta": -48.0388,
+            "rho": 0.1825,
+            "iv": 0,
+            "timeValue": 37.3
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 44600,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 44600,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "88,566",
+            "changeinOpenInterest": 10128,
+            "totalTradedVolume": "21,23,176",
+            "impliedVolatility": 12.31,
+            "lastPrice": 20.35,
+            "change": -10.4,
+            "underlyingValue": 44275.3,
+            "premium": 12.42,
+            "delta": 0.1045,
+            "gamma": 0.0007,
+            "vega": 3.6725,
+            "theta": -30.8088,
+            "rho": 0.0967,
+            "iv": 0,
+            "timeValue": 20.35
+        },
+        "PE": {
+            "openInterest": "8,803",
+            "changeinOpenInterest": 3150,
+            "totalTradedVolume": "5,73,477",
+            "impliedVolatility": 14.72,
+            "lastPrice": 342.45,
+            "change": -95.6,
+            "underlyingValue": 44275.3,
+            "premium": 337.88,
+            "delta": -0.8531,
+            "gamma": 0.0008,
+            "vega": 4.6611,
+            "theta": -34.3987,
+            "rho": -0.7988,
+            "iv": 324.7,
+            "timeValue": 17.75
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 44700,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "4,943",
+            "changeinOpenInterest": 855,
+            "totalTradedVolume": "2,76,584",
+            "impliedVolatility": 15.4,
+            "lastPrice": 433,
+            "change": -93.4,
+            "underlyingValue": 44275.3,
+            "premium": 428.89,
+            "delta": -0.9067,
+            "gamma": 0.0005,
+            "vega": 3.3806,
+            "theta": -22.9075,
+            "rho": -0.8505,
+            "iv": 424.7,
+            "timeValue": 8.3
+        },
+        "CE": {
+            "strikePrice": 44700,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "1,21,526",
+            "changeinOpenInterest": 20760,
+            "totalTradedVolume": "16,29,884",
+            "impliedVolatility": 12.58,
+            "lastPrice": 11.3,
+            "change": -7.4,
+            "underlyingValue": 44275.3,
+            "premium": 5.66,
+            "delta": 0.0528,
+            "gamma": 0.0004,
+            "vega": 2.1834,
+            "theta": -18.5896,
+            "rho": 0.0489,
+            "iv": 0,
+            "timeValue": 11.3
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 44800,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 44800,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "93,551",
+            "changeinOpenInterest": -2896,
+            "totalTradedVolume": "12,64,970",
+            "impliedVolatility": 13.08,
+            "lastPrice": 6.5,
+            "change": -5.5,
+            "underlyingValue": 44275.3,
+            "premium": 2.71,
+            "delta": 0.0268,
+            "gamma": 0.0002,
+            "vega": 1.2575,
+            "theta": -11.074,
+            "rho": 0.0249,
+            "iv": 0,
+            "timeValue": 6.5
+        },
+        "PE": {
+            "openInterest": "2,321",
+            "changeinOpenInterest": 609,
+            "totalTradedVolume": "1,26,336",
+            "impliedVolatility": 16.88,
+            "lastPrice": 532,
+            "change": -82.9,
+            "underlyingValue": 44275.3,
+            "premium": 525.46,
+            "delta": -0.9323,
+            "gamma": 0.0004,
+            "vega": 2.6513,
+            "theta": -17.7943,
+            "rho": -0.8763,
+            "iv": 524.7,
+            "timeValue": 7.3
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 44900,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 44900,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "52,275",
+            "changeinOpenInterest": 9866,
+            "totalTradedVolume": "7,88,713",
+            "impliedVolatility": 13.96,
+            "lastPrice": 3.65,
+            "change": -4.6,
+            "underlyingValue": 44275.3,
+            "premium": 1.56,
+            "delta": 0.0155,
+            "gamma": 0.0001,
+            "vega": 0.7912,
+            "theta": -7.4058,
+            "rho": 0.0144,
+            "iv": 0,
+            "timeValue": 3.65
+        },
+        "PE": {
+            "openInterest": "1,073",
+            "changeinOpenInterest": 67,
+            "totalTradedVolume": "35,117",
+            "impliedVolatility": 19.29,
+            "lastPrice": 630.4,
+            "change": -77,
+            "underlyingValue": 44275.3,
+            "premium": 625.28,
+            "delta": -0.9404,
+            "gamma": 0.0003,
+            "vega": 2.4015,
+            "theta": -18.6961,
+            "rho": -0.8859,
+            "iv": 624.7,
+            "timeValue": 5.7
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 45000,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "3,880",
+            "changeinOpenInterest": 491,
+            "totalTradedVolume": "28,829",
+            "impliedVolatility": 20.56,
+            "lastPrice": 729.3,
+            "change": -79.1,
+            "underlyingValue": 44275.3,
+            "premium": 722.9,
+            "delta": -0.9552,
+            "gamma": 0.0002,
+            "vega": 1.9136,
+            "theta": -13.9261,
+            "rho": -0.9017,
+            "iv": 724.7,
+            "timeValue": 4.6
+        },
+        "CE": {
+            "strikePrice": 45000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "1,56,770",
+            "changeinOpenInterest": 52179,
+            "totalTradedVolume": "13,85,507",
+            "impliedVolatility": 15.61,
+            "lastPrice": 3.45,
+            "change": -3.2,
+            "underlyingValue": 44275.3,
+            "premium": 1.38,
+            "delta": 0.0126,
+            "gamma": 0.0001,
+            "vega": 0.6597,
+            "theta": -6.8826,
+            "rho": 0.0116,
+            "iv": 0,
+            "timeValue": 3.45
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 45100,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "352",
+            "changeinOpenInterest": 64,
+            "totalTradedVolume": "2,542",
+            "impliedVolatility": 23.23,
+            "lastPrice": 828.45,
+            "change": -94.9,
+            "underlyingValue": 44275.3,
+            "premium": 823.61,
+            "delta": -0.9564,
+            "gamma": 0.0002,
+            "vega": 1.8735,
+            "theta": -16.6152,
+            "rho": -0.9049,
+            "iv": 824.7,
+            "timeValue": 3.75
+        },
+        "CE": {
+            "strikePrice": 45100,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "44,953",
+            "changeinOpenInterest": 15161,
+            "totalTradedVolume": "6,26,827",
+            "impliedVolatility": 16.86,
+            "lastPrice": 3.2,
+            "change": -2.2,
+            "underlyingValue": 44275.3,
+            "premium": 1.05,
+            "delta": 0.0091,
+            "gamma": 0.0001,
+            "vega": 0.4995,
+            "theta": -5.614,
+            "rho": 0.0085,
+            "iv": 0,
+            "timeValue": 3.2
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 45200,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 45200,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "50,245",
+            "changeinOpenInterest": 3590,
+            "totalTradedVolume": "6,28,071",
+            "impliedVolatility": 18.19,
+            "lastPrice": 2.45,
+            "change": -1.8,
+            "underlyingValue": 44275.3,
+            "premium": 0.85,
+            "delta": 0.0071,
+            "gamma": 0.0001,
+            "vega": 0.3995,
+            "theta": -4.8348,
+            "rho": 0.0066,
+            "iv": 0,
+            "timeValue": 2.45
+        },
+        "PE": {
+            "openInterest": "121",
+            "changeinOpenInterest": -45,
+            "totalTradedVolume": "910",
+            "impliedVolatility": 25.68,
+            "lastPrice": 929.25,
+            "change": -62.3,
+            "underlyingValue": 44275.3,
+            "premium": 923.94,
+            "delta": -0.9586,
+            "gamma": 0.0002,
+            "vega": 1.7972,
+            "theta": -18.28,
+            "rho": -0.909,
+            "iv": 924.7,
+            "timeValue": 4.55
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 45300,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "190",
+            "changeinOpenInterest": 5,
+            "totalTradedVolume": "407",
+            "impliedVolatility": 26.82,
+            "lastPrice": 1026.55,
+            "change": -76.3,
+            "underlyingValue": 44275.3,
+            "premium": 1022.19,
+            "delta": -0.9671,
+            "gamma": 0.0001,
+            "vega": 1.4877,
+            "theta": -14.0638,
+            "rho": -0.919,
+            "iv": 1024.7,
+            "timeValue": 1.85
+        },
+        "CE": {
+            "strikePrice": 45300,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "28,274",
+            "changeinOpenInterest": 5665,
+            "totalTradedVolume": "4,55,493",
+            "impliedVolatility": 19.81,
+            "lastPrice": 2.6,
+            "change": -1.6,
+            "underlyingValue": 44275.3,
+            "premium": 0.82,
+            "delta": 0.0063,
+            "gamma": 0,
+            "vega": 0.3597,
+            "theta": -4.7334,
+            "rho": 0.0058,
+            "iv": 0,
+            "timeValue": 2.6
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 45400,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 45400,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "25,951",
+            "changeinOpenInterest": 707,
+            "totalTradedVolume": "3,47,075",
+            "impliedVolatility": 21.34,
+            "lastPrice": 2.5,
+            "change": -1.4,
+            "underlyingValue": 44275.3,
+            "premium": 0.76,
+            "delta": 0.0055,
+            "gamma": 0,
+            "vega": 0.3203,
+            "theta": -4.5335,
+            "rho": 0.0051,
+            "iv": 0,
+            "timeValue": 2.5
+        },
+        "PE": {
+            "openInterest": "51",
+            "changeinOpenInterest": 4,
+            "totalTradedVolume": "268",
+            "impliedVolatility": 28.49,
+            "lastPrice": 1125.6,
+            "change": -65.9,
+            "underlyingValue": 44275.3,
+            "premium": 1121.53,
+            "delta": -0.9713,
+            "gamma": 0.0001,
+            "vega": 1.3286,
+            "theta": -12.6482,
+            "rho": -0.925,
+            "iv": 1124.7,
+            "timeValue": 0.9
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 45500,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "628",
+            "changeinOpenInterest": 21,
+            "totalTradedVolume": "681",
+            "impliedVolatility": 30.23,
+            "lastPrice": 1225,
+            "change": -100.1,
+            "underlyingValue": 44275.3,
+            "premium": 1221.09,
+            "delta": -0.9744,
+            "gamma": 0.0001,
+            "vega": 1.2095,
+            "theta": -11.7411,
+            "rho": -0.9299,
+            "iv": 1224.7,
+            "timeValue": 0.3
+        },
+        "CE": {
+            "strikePrice": 45500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "1,21,260",
+            "changeinOpenInterest": -563,
+            "totalTradedVolume": "10,67,504",
+            "impliedVolatility": 23.03,
+            "lastPrice": 2.25,
+            "change": -1.5,
+            "underlyingValue": 44275.3,
+            "premium": 0.77,
+            "delta": 0.0052,
+            "gamma": 0,
+            "vega": 0.3032,
+            "theta": -4.6265,
+            "rho": 0.0048,
+            "iv": 0,
+            "timeValue": 2.25
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 45600,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 45600,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "21,881",
+            "changeinOpenInterest": 2737,
+            "totalTradedVolume": "2,92,174",
+            "impliedVolatility": 24.35,
+            "lastPrice": 2,
+            "change": -1.3,
+            "underlyingValue": 44275.3,
+            "premium": 0.68,
+            "delta": 0.0044,
+            "gamma": 0,
+            "vega": 0.2613,
+            "theta": -4.2113,
+            "rho": 0.0041,
+            "iv": 0,
+            "timeValue": 2
+        },
+        "PE": {
+            "openInterest": "38",
+            "changeinOpenInterest": 4,
+            "totalTradedVolume": "96",
+            "impliedVolatility": 29.78,
+            "lastPrice": 1320.5,
+            "change": -62.2,
+            "underlyingValue": 44275.3,
+            "premium": 1318.62,
+            "delta": -0.9838,
+            "gamma": 0.0001,
+            "vega": 0.819,
+            "theta": -3.6439,
+            "rho": -0.9407,
+            "iv": 1324.7,
+            "timeValue": -4.2
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 45700,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "15",
+            "changeinOpenInterest": 13,
+            "totalTradedVolume": "23",
+            "impliedVolatility": 31.41,
+            "lastPrice": 1420.15,
+            "change": -169.1,
+            "underlyingValue": 44275.3,
+            "premium": 1418.39,
+            "delta": -0.9854,
+            "gamma": 0.0001,
+            "vega": 0.7503,
+            "theta": -3.06,
+            "rho": -0.9442,
+            "iv": 1424.7,
+            "timeValue": -4.55
+        },
+        "CE": {
+            "strikePrice": 45700,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "16,564",
+            "changeinOpenInterest": 2819,
+            "totalTradedVolume": "2,00,006",
+            "impliedVolatility": 25.69,
+            "lastPrice": 1.8,
+            "change": -1.5,
+            "underlyingValue": 44275.3,
+            "premium": 0.61,
+            "delta": 0.0038,
+            "gamma": 0,
+            "vega": 0.2296,
+            "theta": -3.8999,
+            "rho": 0.0035,
+            "iv": 0,
+            "timeValue": 1.8
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 45800,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 45800,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "15,405",
+            "changeinOpenInterest": -6678,
+            "totalTradedVolume": "2,22,126",
+            "impliedVolatility": 27.16,
+            "lastPrice": 1.85,
+            "change": -1.4,
+            "underlyingValue": 44275.3,
+            "premium": 0.58,
+            "delta": 0.0035,
+            "gamma": 0,
+            "vega": 0.2114,
+            "theta": -3.7944,
+            "rho": 0.0032,
+            "iv": 0,
+            "timeValue": 1.85
+        },
+        "PE": {
+            "openInterest": "13",
+            "changeinOpenInterest": 4,
+            "totalTradedVolume": "24",
+            "impliedVolatility": 30.78,
+            "lastPrice": 1517.05,
+            "change": -170.9,
+            "underlyingValue": 44275.3,
+            "premium": 1516.89,
+            "delta": -0.9914,
+            "gamma": 0,
+            "vega": 0.4755,
+            "theta": 2.8768,
+            "rho": -0.9518,
+            "iv": 1524.7,
+            "timeValue": -7.65
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 45900,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 45900,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "12,280",
+            "changeinOpenInterest": 1873,
+            "totalTradedVolume": "1,61,792",
+            "impliedVolatility": 28.96,
+            "lastPrice": 1.95,
+            "change": -1.2,
+            "underlyingValue": 44275.3,
+            "premium": 0.63,
+            "delta": 0.0035,
+            "gamma": 0,
+            "vega": 0.2138,
+            "theta": -4.0881,
+            "rho": 0.0032,
+            "iv": 0,
+            "timeValue": 1.95
+        },
+        "PE": {
+            "openInterest": "11",
+            "changeinOpenInterest": -1,
+            "totalTradedVolume": "44",
+            "impliedVolatility": 36.34,
+            "lastPrice": 1622.1,
+            "change": -99.2,
+            "underlyingValue": 44275.3,
+            "premium": 1619.26,
+            "delta": -0.984,
+            "gamma": 0.0001,
+            "vega": 0.8101,
+            "theta": -6.8596,
+            "rho": -0.9472,
+            "iv": 1624.7,
+            "timeValue": -2.6
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 46000,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "296",
+            "changeinOpenInterest": -67,
+            "totalTradedVolume": "183",
+            "impliedVolatility": 41.92,
+            "lastPrice": 1728.95,
+            "change": -74.5,
+            "underlyingValue": 44275.3,
+            "premium": 1722.81,
+            "delta": -0.9756,
+            "gamma": 0.0001,
+            "vega": 1.1602,
+            "theta": -19.4783,
+            "rho": -0.9415,
+            "iv": 1724.7,
+            "timeValue": 4.25
+        },
+        "CE": {
+            "strikePrice": 46000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "87,931",
+            "changeinOpenInterest": -4320,
+            "totalTradedVolume": "7,23,752",
+            "impliedVolatility": 29.51,
+            "lastPrice": 1.6,
+            "change": -1.4,
+            "underlyingValue": 44275.3,
+            "premium": 0.44,
+            "delta": 0.0025,
+            "gamma": 0,
+            "vega": 0.1577,
+            "theta": -3.0715,
+            "rho": 0.0023,
+            "iv": 0,
+            "timeValue": 1.6
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 46100,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 46100,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "3,680",
+            "changeinOpenInterest": -200,
+            "totalTradedVolume": "1,21,728",
+            "impliedVolatility": 31.53,
+            "lastPrice": 2.05,
+            "change": -0.8,
+            "underlyingValue": 44275.3,
+            "premium": 0.53,
+            "delta": 0.0028,
+            "gamma": 0,
+            "vega": 0.1716,
+            "theta": -3.5688,
+            "rho": 0.0025,
+            "iv": 0,
+            "timeValue": 2.05
+        },
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 1815.04,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 12.6275,
+            "rho": -0.9661,
+            "iv": 1824.7,
+            "timeValue": -1824.7
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 46200,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "5",
+            "changeinOpenInterest": -1,
+            "totalTradedVolume": "44",
+            "impliedVolatility": 39.9,
+            "lastPrice": 1919.55,
+            "change": -69.5,
+            "underlyingValue": 44275.3,
+            "premium": 1917.89,
+            "delta": -0.9895,
+            "gamma": 0,
+            "vega": 0.5627,
+            "theta": -2.1434,
+            "rho": -0.9585,
+            "iv": 1924.7,
+            "timeValue": -5.15
+        },
+        "CE": {
+            "strikePrice": 46200,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "11,525",
+            "changeinOpenInterest": 708,
+            "totalTradedVolume": "1,39,833",
+            "impliedVolatility": 32.35,
+            "lastPrice": 1.8,
+            "change": -1.1,
+            "underlyingValue": 44275.3,
+            "premium": 0.42,
+            "delta": 0.0022,
+            "gamma": 0,
+            "vega": 0.1387,
+            "theta": -2.959,
+            "rho": 0.002,
+            "iv": 0,
+            "timeValue": 1.8
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 46300,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "2",
+            "changeinOpenInterest": 1,
+            "totalTradedVolume": "1",
+            "impliedVolatility": 34.13,
+            "lastPrice": 2013.7,
+            "change": -141.2,
+            "underlyingValue": 44275.3,
+            "premium": 2015.45,
+            "delta": -0.9977,
+            "gamma": 0,
+            "vega": 0.1432,
+            "theta": 9.4613,
+            "rho": -0.9682,
+            "iv": 2024.7,
+            "timeValue": -11
+        },
+        "CE": {
+            "strikePrice": 46300,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "3,440",
+            "changeinOpenInterest": -1425,
+            "totalTradedVolume": "1,03,628",
+            "impliedVolatility": 33.68,
+            "lastPrice": 1.25,
+            "change": -1.5,
+            "underlyingValue": 44275.3,
+            "premium": 0.4,
+            "delta": 0.002,
+            "gamma": 0,
+            "vega": 0.1284,
+            "theta": -2.85,
+            "rho": 0.0018,
+            "iv": 0,
+            "timeValue": 1.25
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 46400,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 46400,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "5,519",
+            "changeinOpenInterest": -751,
+            "totalTradedVolume": "79,361",
+            "impliedVolatility": 34.58,
+            "lastPrice": 1.5,
+            "change": -1.1,
+            "underlyingValue": 44275.3,
+            "premium": 0.33,
+            "delta": 0.0016,
+            "gamma": 0,
+            "vega": 0.1075,
+            "theta": -2.4498,
+            "rho": 0.0015,
+            "iv": 0,
+            "timeValue": 1.5
+        },
+        "PE": {
+            "openInterest": "32",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 2187.85,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 2114.97,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 12.7097,
+            "rho": -0.9724,
+            "iv": 2124.7,
+            "timeValue": 63.15
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 46500,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 46500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "52,054",
+            "changeinOpenInterest": 2705,
+            "totalTradedVolume": "4,67,958",
+            "impliedVolatility": 36.69,
+            "lastPrice": 1.45,
+            "change": -1.2,
+            "underlyingValue": 44275.3,
+            "premium": 0.4,
+            "delta": 0.0019,
+            "gamma": 0,
+            "vega": 0.1215,
+            "theta": -2.9356,
+            "rho": 0.0017,
+            "iv": 0,
+            "timeValue": 1.45
+        },
+        "PE": {
+            "openInterest": "317",
+            "changeinOpenInterest": -31,
+            "totalTradedVolume": "38",
+            "impliedVolatility": 47.07,
+            "lastPrice": 2222,
+            "change": -60.3,
+            "underlyingValue": 44275.3,
+            "premium": 2218.92,
+            "delta": -0.9879,
+            "gamma": 0,
+            "vega": 0.637,
+            "theta": -7.0035,
+            "rho": -0.9634,
+            "iv": 2224.7,
+            "timeValue": -2.7
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 46600,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 46600,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "5,097",
+            "changeinOpenInterest": 3338,
+            "totalTradedVolume": "80,595",
+            "impliedVolatility": 37.99,
+            "lastPrice": 1.5,
+            "change": -1.3,
+            "underlyingValue": 44275.3,
+            "premium": 0.39,
+            "delta": 0.0017,
+            "gamma": 0,
+            "vega": 0.1134,
+            "theta": -2.8357,
+            "rho": 0.0016,
+            "iv": 0,
+            "timeValue": 1.5
+        },
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 2314.93,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 12.7644,
+            "rho": -0.9766,
+            "iv": 2324.7,
+            "timeValue": -2324.7
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 46700,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 2414.91,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 12.7918,
+            "rho": -0.9787,
+            "iv": 2424.7,
+            "timeValue": -2424.7
+        },
+        "CE": {
+            "strikePrice": 46700,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "2,390",
+            "changeinOpenInterest": 863,
+            "totalTradedVolume": "65,623",
+            "impliedVolatility": 38.8,
+            "lastPrice": 5.7,
+            "change": 2.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.32,
+            "delta": 0.0014,
+            "gamma": 0,
+            "vega": 0.0952,
+            "theta": -2.4304,
+            "rho": 0.0013,
+            "iv": 0,
+            "timeValue": 5.7
+        },
+        "CE_A": {
+            "i": "Short Covering"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 46800,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 46800,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "1,344",
+            "changeinOpenInterest": -351,
+            "totalTradedVolume": "67,476",
+            "impliedVolatility": 40.02,
+            "lastPrice": 1.2,
+            "change": -1.5,
+            "underlyingValue": 44275.3,
+            "premium": 0.3,
+            "delta": 0.0013,
+            "gamma": 0,
+            "vega": 0.0882,
+            "theta": -2.3231,
+            "rho": 0.0012,
+            "iv": 0,
+            "timeValue": 1.2
+        },
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 2514.89,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 12.8192,
+            "rho": -0.9808,
+            "iv": 2524.7,
+            "timeValue": -2524.7
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 46900,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 2614.87,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 12.8466,
+            "rho": -0.9829,
+            "iv": 2624.7,
+            "timeValue": -2624.7
+        },
+        "CE": {
+            "strikePrice": 46900,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "2,623",
+            "changeinOpenInterest": 1067,
+            "totalTradedVolume": "66,707",
+            "impliedVolatility": 41.04,
+            "lastPrice": 1.25,
+            "change": -1.5,
+            "underlyingValue": 44275.3,
+            "premium": 0.27,
+            "delta": 0.0012,
+            "gamma": 0,
+            "vega": 0.0785,
+            "theta": -2.1204,
+            "rho": 0.0011,
+            "iv": 0,
+            "timeValue": 1.25
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 47000,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "4",
+            "changeinOpenInterest": 4,
+            "totalTradedVolume": "4",
+            "impliedVolatility": 74.13,
+            "lastPrice": 2760,
+            "change": -554.6,
+            "underlyingValue": 44275.3,
+            "premium": 2739.67,
+            "delta": -0.9588,
+            "gamma": 0.0001,
+            "vega": 1.7906,
+            "theta": -74.3659,
+            "rho": -0.9472,
+            "iv": 2724.7,
+            "timeValue": 35.3
+        },
+        "CE": {
+            "strikePrice": 47000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "87,559",
+            "changeinOpenInterest": 13052,
+            "totalTradedVolume": "5,68,487",
+            "impliedVolatility": 42.59,
+            "lastPrice": 1.2,
+            "change": -1.1,
+            "underlyingValue": 44275.3,
+            "premium": 0.28,
+            "delta": 0.0012,
+            "gamma": 0,
+            "vega": 0.0791,
+            "theta": -2.2152,
+            "rho": 0.0011,
+            "iv": 0,
+            "timeValue": 1.2
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Short Buildup"
+        }
+    },
+    {
+        "strikePrice": 47500,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 47500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "15,179",
+            "changeinOpenInterest": 1455,
+            "totalTradedVolume": "1,22,498",
+            "impliedVolatility": 49.1,
+            "lastPrice": 1.15,
+            "change": -1.1,
+            "underlyingValue": 44275.3,
+            "premium": 0.26,
+            "delta": 0.0009,
+            "gamma": 0,
+            "vega": 0.0648,
+            "theta": -2.0917,
+            "rho": 0.0009,
+            "iv": 0,
+            "timeValue": 1.15
+        },
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 3212.1,
+            "change": -81.8,
+            "underlyingValue": 44275.3,
+            "premium": 3214.74,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 13.011,
+            "rho": -0.9955,
+            "iv": 3224.7,
+            "timeValue": -12.6
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 48000,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 3714.64,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 13.1479,
+            "rho": -1.0059,
+            "iv": 3724.7,
+            "timeValue": -3724.7
+        },
+        "CE": {
+            "strikePrice": 48000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "19,994",
+            "changeinOpenInterest": -2629,
+            "totalTradedVolume": "1,30,395",
+            "impliedVolatility": 55.39,
+            "lastPrice": 1.1,
+            "change": -1,
+            "underlyingValue": 44275.3,
+            "premium": 0.24,
+            "delta": 0.0008,
+            "gamma": 0,
+            "vega": 0.0542,
+            "theta": -1.9697,
+            "rho": 0.0007,
+            "iv": 0,
+            "timeValue": 1.1
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 48500,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 48500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "17,716",
+            "changeinOpenInterest": 1593,
+            "totalTradedVolume": "57,459",
+            "impliedVolatility": 62.77,
+            "lastPrice": 1.6,
+            "change": -0.5,
+            "underlyingValue": 44275.3,
+            "premium": 0.28,
+            "delta": 0.0008,
+            "gamma": 0,
+            "vega": 0.0567,
+            "theta": -2.3363,
+            "rho": 0.0008,
+            "iv": 0,
+            "timeValue": 1.6
+        },
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 4214.53,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 13.2849,
+            "rho": -1.0164,
+            "iv": 4224.7,
+            "timeValue": -4224.7
+        },
+        "CE_A": {
+            "i": "Short Buildup"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 49000,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 49000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "13,787",
+            "changeinOpenInterest": -1107,
+            "totalTradedVolume": "60,434",
+            "impliedVolatility": 67.09,
+            "lastPrice": 0.95,
+            "change": -0.8,
+            "underlyingValue": 44275.3,
+            "premium": 0.19,
+            "delta": 0.0005,
+            "gamma": 0,
+            "vega": 0.0374,
+            "theta": -1.6478,
+            "rho": 0.0005,
+            "iv": 0,
+            "timeValue": 0.95
+        },
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 4714.43,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 13.4218,
+            "rho": -1.0269,
+            "iv": 4724.7,
+            "timeValue": -4724.7
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 49500,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 5214.33,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 13.5588,
+            "rho": -1.0374,
+            "iv": 5224.7,
+            "timeValue": -5224.7
+        },
+        "CE": {
+            "strikePrice": 49500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "5,419",
+            "changeinOpenInterest": -1150,
+            "totalTradedVolume": "52,295",
+            "impliedVolatility": 72.03,
+            "lastPrice": 0.7,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.15,
+            "delta": 0.0004,
+            "gamma": 0,
+            "vega": 0.0286,
+            "theta": -1.3525,
+            "rho": 0.0004,
+            "iv": 0,
+            "timeValue": 0.7
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 50000,
+        "expiryDate": "08-Jun-2023",
+        "CE": {
+            "strikePrice": 50000,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "14,496",
+            "changeinOpenInterest": -3196,
+            "totalTradedVolume": "90,225",
+            "impliedVolatility": 76.53,
+            "lastPrice": 0.65,
+            "change": -0.9,
+            "underlyingValue": 44275.3,
+            "premium": 0.11,
+            "delta": 0.0003,
+            "gamma": 0,
+            "vega": 0.0213,
+            "theta": -1.0674,
+            "rho": 0.0003,
+            "iv": 0,
+            "timeValue": 0.65
+        },
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 5714.22,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 13.6958,
+            "rho": -1.0478,
+            "iv": 5724.7,
+            "timeValue": -5724.7
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    },
+    {
+        "strikePrice": 50500,
+        "expiryDate": "08-Jun-2023",
+        "PE": {
+            "openInterest": "0",
+            "changeinOpenInterest": 0,
+            "totalTradedVolume": "0",
+            "impliedVolatility": 0,
+            "lastPrice": 0,
+            "change": 0,
+            "underlyingValue": 44275.3,
+            "premium": 6214.12,
+            "delta": -1,
+            "gamma": 0,
+            "vega": 0,
+            "theta": 13.8327,
+            "rho": -1.0583,
+            "iv": 6224.7,
+            "timeValue": -6224.7
+        },
+        "CE": {
+            "strikePrice": 50500,
+            "expiryDate": "08-Jun-2023",
+            "underlying": "BANKNIFTY",
+            "openInterest": "25,411",
+            "changeinOpenInterest": -3188,
+            "totalTradedVolume": "1,73,869",
+            "impliedVolatility": 81.68,
+            "lastPrice": 0.65,
+            "change": -0.8,
+            "underlyingValue": 44275.3,
+            "premium": 0.1,
+            "delta": 0.0002,
+            "gamma": 0,
+            "vega": 0.0181,
+            "theta": -0.9693,
+            "rho": 0.0002,
+            "iv": 0,
+            "timeValue": 0.65
+        },
+        "CE_A": {
+            "i": "Long Liquidation"
+        },
+        "PE_A": {
+            "i": "Long Liquidation"
+        }
+    }
+]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scroll Bar Movement Example</title>
+
+</head>
+
+<body>
+
+    <!-- // HTML -->
+    <div id="data-container"></div>
+
+    <script>
+
+
+
+        // JavaScript
+        function fetchData() {
+            // Make a request to the API to fetch the data
+            fetch('/data/data.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Update the data container with the new data
+                    // console.log(data);
+                    // const dataContainer = document.getElementById('data-container');
+                    // dataContainer.textContent = JSON.stringify(data);
+
+                    // Call the fetchData function again after a certain interval (e.g., 1 second)
+                    setTimeout(fetchData, 1000);
+                })
+                .catch(error => {
+                    // Handle any errors that occur during data fetching or processing
+                    console.error('Error fetching data:', error);
+
+                    // Retry the fetchData function after a certain interval (e.g., 5 seconds)
+                    setTimeout(fetchData, 5000);
+                });
+        }
+
+        // Call the fetchData function to initiate the data fetching
+        fetchData();
+
+
+
+    </script>
+</body>
+
+</html>

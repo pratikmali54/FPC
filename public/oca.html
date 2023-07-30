@@ -1,0 +1,315 @@
+<html>
+
+<head>
+  <title>Option Chain Analysis</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+      crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+</head>
+
+<body onload="init()">
+
+  <div class="row">
+    <div class=" col-sm-2 ">
+      <div class="d-flex flex-column flex-shrink-0 pt-3 pb-3 text-white bg-dark" style="height: 100vh;">
+        <div class="pt-2 pb-2">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Dashboard</span>
+          </a>
+        </div>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto px-2">
+          <li class="nav-item">
+            <a href="/multi" class="nav-link text-white" aria-current="page">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#home"></use>
+              </svg>
+              Multiple API
+            </a>
+          </li>
+          <li>
+            <a href="/entry" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+              </svg>
+              Entry
+            </a>
+          </li>
+          <li>
+            <a href="/oca" class="nav-link active">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#table"></use>
+              </svg>
+              Option Chain Analysis
+            </a>
+          </li>
+          <li>
+            <a href="/api" class="nav-link text-white">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#grid"></use>
+              </svg>
+              Live API
+            </a>
+          </li>
+         
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" class="rounded-circle me-2" width="32" height="32">
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm-10">
+      <div class=" pt-3 pb-3 px-4 bg-dark text-white position-sticky">
+        <h1>Option Chain</h1>
+
+      </div>
+      <div class="container-fluid  pt-4 pb-2">
+
+        <form class="inline-form">
+          <fieldset>
+            <div class="form-group-inline">
+              <label for="expiryDate" class="form-label">Expiry Date</label>
+              <select onchange="generateTbl()" name="expiryDate" id="expiryDate"></select>
+              &nbsp;&nbsp;<span id="lastUpdated"></span>
+            </div>
+          </fieldset>
+        </form>
+        <div id="content">Loading...</div>
+      </div>
+
+      <script id="chain" type="text/x-handlebars-template">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Interpretation</th>
+              <th>Call Volume</th>
+              <th>Call Net OI</th>
+              <th>Call change in OI</th>
+              <th>Call Price change</th>
+              <th>Call IV</th>
+              <th>Call LTP</th>
+              <th>strike</th>
+              <th>Put LTP</th>
+              <th>Put IV</th>
+              <th>Put Price Change</th>
+              <th>Put Change in OI</th>
+              <th>Put Net OI</th>
+              <th>Put Volume</th>
+              <th>Interpretation</th>
+              <!-- <th>PCR</th>
+              <th>PCR Indication</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            {{#each option_chain}}
+            <tr>
+              {{#if CE_A.trend }}
+                <td class="text-white bg-success"><i class="bi bi-arrow-up"></i> {{ CE_A.i }} </td>
+              {{else}}
+                <td class="text-white bg-danger"><i class="bi bi-arrow-down"></i> {{ CE_A.i }}</td>
+              {{/if}}
+              <td class="text-right">{{ CE.totalTradedVolume }}</td>
+              <td class="text-right">{{ CE.openInterest }}</td>
+              {{#if CE_A.OI}}
+                <td class="text-right text-white bg-success">{{ CE.changeinOpenInterest }} <i class="bi bi-arrow-up"></i></td>
+              {{else }}
+                <td class="text-right text-white bg-danger">{{ CE.changeinOpenInterest }} <i class="bi bi-arrow-down"></i>  </td>
+              {{/if}}
+              {{#if CE_A.price}}
+                <td class="text-right text-white bg-success">{{ CE.change }} <i class="bi bi-arrow-up"></i></td>
+              {{else}}
+                <td class="text-right text-white bg-danger">{{ CE.change }} <i class="bi bi-arrow-down"></i></td>
+              {{/if}}
+              <td class="text-right">{{ CE.impliedVolatility }}</td>
+              <td class="text-right">{{ CE.lastPrice }}</td>
+              <th class="text-center">{{ strikePrice }}</th>
+              <td class="text-right">{{ PE.lastPrice }}</td>
+              <td class="text-right">{{ PE.impliedVolatility }}</td>
+              
+              {{#if PE_A.price}}
+                <td class="text-right text-white bg-success">{{ PE.change }} <i class="bi bi-arrow-up"></i></td>
+              {{else}}
+                <td class="text-right text-white bg-danger">{{ PE.change }} <i class="bi bi-arrow-down"></i></td>
+              {{/if}}
+              
+              {{#if PE_A.OI}}
+                <td class="text-right text-white bg-success">{{ PE.changeinOpenInterest }} <i class="bi bi-arrow-up"></i></td>
+              {{else }}
+                <td class="text-right text-white bg-danger">{{ PE.changeinOpenInterest }} <i class="bi bi-arrow-down"></i></td>
+              {{/if}}
+    
+              <td class="text-right">{{ PE.openInterest }}</td>
+              <td class="text-right">{{ PE.totalTradedVolume }}</td>
+              {{#if PE_A.trend }}
+                <td class="text-white bg-success"><i class="bi bi-arrow-up"></i> {{ PE_A.i }}</td>
+              {{else}}
+                <td class="text-white bg-danger"><i class="bi bi-arrow-down"></i></i> {{ PE_A.i }}</td>
+              {{/if}}
+              <!-- <td>PCR</td>
+              <td>PCR Indication</td> -->
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+    
+        <!-- <p>Developed by <a href="https://www.facebook.com/aaditya.tamrakar.9" target="_blank">Aaditya Tamrakar</a></p> -->
+      </script>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    var optionChainData, lastUpdated, underlyingValue, selected_expiry, option_chain = [];
+
+    function getData(cb) {
+      return new Promise((resolve, reject) => {
+        if (optionChainData != null) {
+          resolve(optionChainData);
+        } else {
+          fetch('/chain')
+            .then(resp => {
+              if (resp.status != 200) throw new Error('something went wrong');
+              return resp.json();
+            })
+            .then(data => {
+              optionChainData = data;
+              lastUpdated = data.records.timestamp;
+              document.querySelector('#lastUpdated').innerHTML = 'Last Updated: ' + lastUpdated;
+              resolve(optionChainData);
+            })
+            .catch(err => {
+              document.getElementById('content').innerHTML = "Error Occured: " + err.toString();
+              reject('error');
+            })
+        }
+      });
+    }
+
+    function init() {
+      getData().then(function (data) {
+        expiryDates = data.records.expiryDates;
+        underlyingValue = data.records.underlyingValue;
+        selected_expiry = data.records.expiryDates[0];
+        // console.log(selected_expiry);
+
+        fillExpiryDate(expiryDates);
+        // generateTbl(data);
+        document.querySelector('#expiryDate').value = selected_expiry;
+        generateTbl();
+      })
+    }
+
+    function generateTbl() {
+
+      let expiryDate = document.querySelector('#expiryDate').value;
+      let option_chain = optionChainData.records.data.filter(c => {
+        return (
+          c.strikePrice <= 800 + (parseInt(underlyingValue / 100) * 100)) &&
+          (c.strikePrice >= (parseInt(underlyingValue / 100) * 100) - 800) &&
+          c.expiryDate == expiryDate
+      });
+
+      option_chain = JSON.parse(JSON.stringify(option_chain)).map(optionChainAnalysis);
+      // console.log(option_chain);
+
+      let context = {
+        option_chain,
+        lastUpdated,
+        underlyingValue,
+        selected_expiry
+      };
+      renderTbl(context);
+    }
+
+    function fillExpiryDate(expiryDates) {
+      let expirySelect = document.querySelector('#expiryDate');
+      // console.log(expirySelect);
+      expirySelect.innerHTML = expiryDates.map((c, idx) => {
+        return `<option value="${c}">${c}</option>`;
+      });
+    }
+
+    function optionChainAnalysis(strike) {
+
+      strike.CE.change = strike.CE.change ? strike.CE.change.toFixed(1) : '';
+      strike.PE.change = strike.PE.change ? strike.PE.change.toFixed(1) : '';
+      // console.log(strike.PE.change);
+      strike.PE.openInterest = String(strike.PE.openInterest).replace(/(\d)(?=(\d\d)+\d$)/g, "$1,");
+      strike.CE.openInterest = String(strike.CE.openInterest).replace(/(\d)(?=(\d\d)+\d$)/g, "$1,");
+      strike.PE.totalTradedVolume = String(strike.PE.totalTradedVolume).replace(/(\d)(?=(\d\d)+\d$)/g,
+        "$1,");
+      strike.CE.totalTradedVolume = String(strike.CE.totalTradedVolume).replace(/(\d)(?=(\d\d)+\d$)/g,
+        "$1,");
+
+      strike.CE_A = {};
+      strike.PE_A = {};
+
+      strike.CE_A.price = strike.CE.change > 0 ? 1 : 0;
+      strike.CE_A.OI = strike.CE.changeinOpenInterest > 0 ? 1 : 0;
+
+      strike.PE_A.price = strike.PE.change > 0 ? 1 : 0;
+      strike.PE_A.OI = strike.PE.changeinOpenInterest > 0 ? 1 : 0;
+
+      if (strike.CE_A.price === 0 && strike.CE_A.OI === 0) strike.CE_A.i = 'Long Liquidation';
+      else if (strike.CE_A.price === 0 && strike.CE_A.OI === 1) strike.CE_A.i = 'Short Buildup';
+      else if (strike.CE_A.price === 1 && strike.CE_A.OI === 1) strike.CE_A.i = 'Short Covering';
+      else if (strike.CE_A.price === 1 && strike.CE_A.OI === 0) strike.CE_A.i = 'Long Buildup';
+
+      if (strike.PE_A.price === 0 && strike.PE_A.OI === 0) strike.PE_A.i = 'Long Liquidation';
+      else if (strike.PE_A.price === 0 && strike.PE_A.OI === 1) strike.PE_A.i = 'Short Buildup';
+      else if (strike.PE_A.price === 1 && strike.PE_A.OI === 1) strike.PE_A.i = 'Short Covering';
+      else if (strike.PE_A.price === 1 && strike.PE_A.OI === 0) strike.PE_A.i = 'Long Buildup';
+
+      strike.PE_A.trend = (strike.PE_A.i == 'Long Liquidation' || strike.PE_A.i == 'Short Buildup') ?
+        0 : 1;
+      strike.CE_A.trend = (strike.CE_A.i == 'Long Liquidation' || strike.CE_A.i == 'Short Buildup') ?
+        1 : 0;
+
+      return strike;
+    }
+
+    function renderTbl(context) {
+      console.log(  context);
+      var source = document.getElementById("chain").innerHTML;
+      // console.log(source);
+      var template = Handlebars.compile(source);
+      document.getElementById('content').innerHTML = template(context);
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <script src="functions.js"></script>
+    <!-- <script src="functions-backup.js"></script> -->
+    <style>
+        div#content {
+            display: none;
+        }
+
+        .last_update {
+            margin-left: auto;
+        }
+    </style>
+
+</head>
+
+
+<body onload=init()>
+    <div class="container-fluid position-fixed bg-light">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg border-bottom ">
+                    <a class="navbar-brand" href="/">
+                        <h1>FPC</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="position-sticky collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="nav nav-pills  mb-auto px-2">
+                            <li class="nav-item ">
+                                <a href="/multi" class="nav-link text-dark" aria-current="page">
+
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/entry" class="nav-link text-dark">
+
+                                    Entry
+                                </a>
+                            </li>
+                            <!-- <li>
+                            <a href="/oca" class="nav-link text-dark">
+                                
+                                Option Chain Analysis
+                            </a>
+                        </li> -->
+                            <!-- <li>
+                            <a href="/api" class="nav-link text-dark">
+                                
+                                Live API
+                            </a>
+                        </li>
+                        <li> -->
+                            <a href="/temp" class="nav-link text-dark">
+                                <svg class="bi me-2" width="16" height="16">
+                                    <use xlink:href="#grid"></use>
+                                </svg>
+                                Temp
+                            </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <ul class="nav nav-tabs pt-2" id="nav-tabs-top">
+
+                </ul>
+
+
+                <form class="inline-form bg-secondary p-2 m-0   ">
+                    <fieldset>
+                        <div class="form-group-inline d-flex">
+                            <select name="expiryDate" id="dropdown-date" onchange="get_select()"></select>
+                            <div id="checkbox_container"></div>
+                            <div class="dropdown" id="dropdown-main">
+                                <div class="dropdown-toggle" id="dropdownMenuButton"> Select StrikePrice </div>
+                                <div id="dropdown" class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid padding-t-200">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="content"></div>
+
+                <script id="table-template" type="text/x-handlebars-template">
+                <table class="table  table-striped text-center">
+                    <thead class="sticky-top table-secondary">
+                        <tr>
+                            <th colspan="3">Call</th>
+                            
+                            <th id="underlying_value"></th>
+                            <th colspan="3">Put</th>
+                        </tr>
+                        <tr>
+                            
+                         
+                            <th id="volume">Volume</th>
+                            <th style="width: 150px;">Change</th>
+                            <th style="width: 150px;">Premium</th>         
+                            
+                            <th style="width: 150px;">Strike Price</th>
+                            
+                            <th style="width: 150px;" >Premium</th>
+                            <th style="width: 150px;">Change</th>
+                            <th>Volume</th>
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each data}}
+                        <tr>                                  
+                           
+                            <td style =" {{CE.CE_width}} " class="ce_totalTradedVolume" >{{CE.totalTradedVolume}}</td>
+                            <td class="ce_change {{CE.style_class}}">{{CE.change}}</td>
+                            <td class="ce_premium">{{CE.premium}}</td>                            
+                            
+                            <td class="strikeprice"> {{strikePrice}}</td>
+                            
+                            <td class="pe_premium red-300">{{PE.premium}}</td>
+                            <td class="pe_change {{PE.style_class}}">{{PE.change}}</td>
+                            <td style ="{{PE.PE_width}}" class="pe_totalTradedVolume" >{{PE.totalTradedVolume}}</td>
+                           
+                            
+                        </tr>   
+                        {{/each}}
+                    </tbody>
+                </table>
+            </script>
+                <h2>Volume Option Chain</h2>
+                <div id="status"></div>
+                <div class="last_update">Last Updated: <span id="last_update"></span> </div>
+                <div id="table-container" class="table-bordered table-striped table_container"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        const index_optionchain_select = document.getElementById('index_optionchain_select');
+        var exp_date = document.getElementById('dropdown-date');
+
+        window.addEventListener("load", (event) => {
+            const statusDisplay = document.getElementById("status");
+            statusDisplay.textContent = navigator.onLine ? "Online" : "OFFline";
+        });
+
+        function init() {
+
+            // fetch('/daaa.json').then(resp => {
+            fetch('/multiapi').then(resp => {
+                // console.log(resp);
+                if (resp.status != 200) throw new Error('something went wrong');
+                return resp.json();
+            }).then(data => {
+                var filteredData = data;
+                // console.log(data);
+                //  filteredData = data.filter(item => item.expiryDate === "20-Jul-2023" && item.CE.underlying === "NIFTY");
+
+                // renderdata(filteredData);
+
+                window.onload = onload_table();
+                // on load create table
+                function onload_table() {
+
+
+
+                    document.getElementById("dropdownMenuButton").addEventListener("click", function () {
+                        var dropdownMenu = this.nextElementSibling;
+                        dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
+                        var dropdown = document.getElementById("dropdown-main");
+                        document.addEventListener("click", function (event) {
+                            var targetElement = event.target;
+                            if (dropdown.contains(targetElement) === false) {
+                                dropdownMenu.style.display = "none";
+                            }
+                        });
+                    });
+                    setTimeout(() => {
+                        get_select(filteredData);
+
+                    }, 100);
+                    index_check_available(filteredData);
+                    show_data(filteredData);
+                }
+
+            }).catch(err => {
+                document.getElementById('content').innerHTML = "Error Occured: " + err.toString();
+                // reject('error');
+            })
+        }
+
+        var CE_data_css = [];
+        var PE_data_css = [];
+
+        function renderdata(data) {
+            // console.log(data);
+
+            const datas = data;
+            var dataa = data;
+
+
+            CE_data_css.length = 0;
+            PE_data_css.length = 0;
+            // console.log('datas,' ,datas );
+            for (var i = 0; i < dataa.length; i++) {
+
+                var CE_a = dataa[i].CE.totalTradedVolume;
+                CE_a = CE_a.replace(/\,/g, ''); // 1125, but a string, so convert it to number
+                CE_a = parseInt(CE_a, 10);
+                CE_data_css.push(CE_a);
+
+                var PE_a = dataa[i].PE.totalTradedVolume;
+                PE_a = PE_a.replace(/\,/g, ''); // 1125, but a string, so convert it to number
+                PE_a = parseInt(PE_a, 10);
+                PE_data_css.push(PE_a);
+            };
+
+            var CE_maxx = Math.max(...CE_data_css);
+            var PE_maxx = Math.max(...PE_data_css);
+
+            for (var i = 0; i < dataa.length; i++) {
+              
+
+
+                var CE_b = dataa[i].CE.totalTradedVolume;
+                CE_b = CE_b.replace(/\,/g, ''); // a string, so convert it to number
+                CE_b = parseInt(CE_b, 10);
+                var CE_width = ((CE_b / CE_maxx) * 100).toFixed(30);
+
+                var PE_b = dataa[i].PE.totalTradedVolume;
+                PE_b = PE_b.replace(/\,/g, ''); // a string, so convert it to number
+                PE_b = parseInt(PE_b, 10);
+                var PE_width = ((PE_b / PE_maxx) * 100).toFixed(30);
+
+                data[i].CE.CE_width = 'background:linear-gradient(to left, #F00 ' + CE_width + '%, #fff ' + CE_width + '%)';
+                data[i].PE.PE_width = 'background:linear-gradient(to right, #008000 ' + PE_width + '%, #fff ' + PE_width + '%  )';
+
+
+                var CE_css_class = '';
+                var CE__change = dataa[i].CE.change;
+
+                if (Math.sign(CE__change) == '-1') {
+
+                    CE_css_class = 'negative';
+                }
+                else if (Math.sign(CE__change) == '1') {
+                    CE_css_class = 'positive';
+                }
+                else {
+                    CE_css_class = 'neutral';
+                }
+
+                var PE_css_class = '';
+                var PE__change = dataa[i].PE.change;
+
+                if (Math.sign(PE__change) == '-1') {
+
+                    PE_css_class = 'negative';
+                }
+                else if (Math.sign(PE__change) == '1') {
+                    PE_css_class = 'positive';
+                }
+                else {
+                    PE_css_class = 'neutral';
+                }
+
+                data[i].CE.style_class = CE_css_class;
+                data[i].PE.style_class = PE_css_class;
+                
+            }
+
+            console.log(data);
+
+            // Get the table template
+            var templateSource = document.getElementById('table-template').innerHTML;
+            // Compile the template
+            var template = Handlebars.compile(templateSource);
+            // Render the template with data
+            var html = template({ data: datas });
+            // Insert the rendered HTML into a container element
+            document.getElementById('table-container').innerHTML = html;
+        }
+
+
+
+
+        function fetchData() {
+            // Make a request to the API to fetch the data
+            fetch('/multiapi')
+                // fetch('/daaa.json')
+                .then(response => response.json())
+                .then(data => {
+                    pass_data(data);
+                    get_all_filter(data);
+
+                })
+
+                .catch(error => {
+                    // Handle any errors that occur during data fetching or processing
+                    console.error('Error fetching data:', error);
+                    // Retry the fetchData function after a certain interval 
+                    setTimeout(fetchData, 5000);
+                });
+
+
+        }
+
+        // Call the fetchData function to initiate the data fetching
+        setTimeout(() => {
+            fetchData();
+        }, 100);
+
+        // Call the fetchData function in 3 sec interval
+        setInterval(fetchData, 30000);
+
+
+
+    </script>
+
+
+</body>
+
+</html>
