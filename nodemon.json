@@ -1,0 +1,5 @@
+{
+  "watch": ["./"],
+  "ext": "js, css, html",
+  "ignore": ["public/data", ".git", "node_modules/**/node_modules"]
+}

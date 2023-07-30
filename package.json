@@ -1,0 +1,29 @@
+{
+  "name": "nse-option-chain",
+  "version": "1.0.0",
+  "description": "NSE Option Chain",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pm2 start process.json",
+    "stop": "pm2 stop app",
+    "start": "node app.js",
+    "serve": "nodemon app.js",
+    "live": "nodemon live.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Nitin Mali",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.0",
+    "browserify": "^17.0.0",
+    "circular-json": "^0.5.9",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "objects-to-csv-file": "^1.0.1",
+    "socketcluster": "^17.3.0",
+    "socketcluster-client": "^17.1.0",
+    "socketcluster-server": "^17.3.0",
+    "uniqid": "^5.4.0"
+  }
+}
